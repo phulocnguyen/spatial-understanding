@@ -1,0 +1,16 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+case: volume
+shapes:
+- box
+- sphere
+measurement: volume
+unit: cm3
+values:
+- 100
+- 110
+- 120
+- 130

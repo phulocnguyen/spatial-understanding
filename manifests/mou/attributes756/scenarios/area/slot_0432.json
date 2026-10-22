@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "area",
+  "case_id": "MOU-2.1",
+  "family": "geometric_properties",
+  "condition": "shape_conditioned",
+  "level": "L1",
+  "seed": 44345,
+  "split": "train",
+  "query": {
+    "footprint_area": {
+      "value": 18,
+      "unit": "cm2",
+      "value_si": 0.0018000000000000002
+    }
+  },
+  "requested_shape": "rectangular_plate",
+  "reference_shape": "rectangular_plate",
+  "objects": [
+    {
+      "category": "rectangular_plate",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.04993335241765106,
+          0.052000000000000005,
+          0.03
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.04993335241765106,
+        "width": 0.052000000000000005,
+        "height": 0.03,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.002596534325717855,
+        "volume": 7.789602977153565e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "rectangular_plate",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.03214285714285715,
+          0.056,
+          0.03
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.03214285714285715,
+        "width": 0.056,
+        "height": 0.03,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0018000000000000002,
+        "volume": 5.4000000000000005e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.018213633166348463,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.036427266332696925,
+        "width": 0.036427266332696925,
+        "height": 0.03,
+        "radius": 0.018213633166348463,
+        "diameter": 0.036427266332696925,
+        "footprint_area": 0.0010421807412125605,
+        "volume": 3.1265422236376816e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    },
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.023936536824085964,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.04787307364817193,
+        "width": 0.04787307364817193,
+        "height": 0.03,
+        "radius": 0.023936536824085964,
+        "diameter": 0.04787307364817193,
+        "footprint_area": 0.0018000000000000006,
+        "volume": 5.400000000000002e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_3",
+      "distractor_role": "incorrect_shape_correct_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": true
+    }
+  ],
+  "target_index": 1,
+  "target_id": "object_1",
+  "distractor_ids": [
+    "object_0",
+    "object_2",
+    "object_3"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.02,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.4,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 4
+  },
+  "separation": [
+    {
+      "attribute": "footprint_area",
+      "minimum_si": 0.0007200000000000002,
+      "actual_si": 0.000796534325717855,
+      "dimension": 2
+    },
+    {
+      "attribute": "footprint_area",
+      "minimum_si": 0.0007200000000000002,
+      "actual_si": 0.0007578192587874399,
+      "dimension": 2
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "97ce4edc641594f712b6d3bbd17f5ac70f923de8ad56f7b6d9ac41807408b30d",
+  "constraint_necessity": {
+    "footprint_area": true
+  },
+  "target_measurement_ranks": {
+    "footprint_area": 1
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "68f4a884d4038db35f1d54391ac05ff89a08c02a54f24516a15100bed8440eec",
+  "scenario_id": "MOU_area_shape_conditioned_L1_44345_68f4a884d4"
+}

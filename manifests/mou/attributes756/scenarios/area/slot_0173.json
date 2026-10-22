@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "area",
+  "case_id": "MOU-2.1",
+  "family": "geometric_properties",
+  "condition": "same_shape",
+  "level": "L3",
+  "seed": 18186,
+  "split": "train",
+  "query": {
+    "footprint_area": {
+      "value": 20,
+      "unit": "cm2",
+      "value_si": 0.002
+    }
+  },
+  "requested_shape": "circular_disk",
+  "reference_shape": "circular_disk",
+  "objects": [
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.02776008929387056,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.05552017858774112,
+        "width": 0.05552017858774112,
+        "height": 0.03,
+        "radius": 0.02776008929387056,
+        "diameter": 0.05552017858774112,
+        "footprint_area": 0.0024209821656582574,
+        "volume": 7.262946496974772e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.027832824151518314,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.05566564830303663,
+        "width": 0.05566564830303663,
+        "height": 0.03,
+        "radius": 0.027832824151518314,
+        "diameter": 0.05566564830303663,
+        "footprint_area": 0.0024336853295283843,
+        "volume": 7.301055988585153e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.025231325220201602,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.050462650440403205,
+        "width": 0.050462650440403205,
+        "height": 0.03,
+        "radius": 0.025231325220201602,
+        "diameter": 0.050462650440403205,
+        "footprint_area": 0.002,
+        "volume": 6e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    }
+  ],
+  "target_index": 2,
+  "target_id": "object_2",
+  "distractor_ids": [
+    "object_0",
+    "object_1"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.01,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.2,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 3
+  },
+  "separation": [
+    {
+      "attribute": "footprint_area",
+      "minimum_si": 0.0004,
+      "actual_si": 0.00042098216565825694,
+      "dimension": 2
+    },
+    {
+      "attribute": "footprint_area",
+      "minimum_si": 0.0004,
+      "actual_si": 0.00043368532952838424,
+      "dimension": 2
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "1b5192095fbdbc5e9faa32539ad8ebcac7af44350ecaef33666bbd92b90f3e70",
+  "constraint_necessity": {
+    "footprint_area": true
+  },
+  "target_measurement_ranks": {
+    "footprint_area": 0
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "bd1690e329cf886de634223f12fdd08475efbb06b4683c38ef38c8f2103d57bf",
+  "scenario_id": "MOU_area_same_shape_L3_18186_bd1690e329"
+}

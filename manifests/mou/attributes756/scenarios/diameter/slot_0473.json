@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "diameter",
+  "case_id": "MOU-1.5",
+  "family": "physical_dimensions",
+  "condition": "cross_shape",
+  "level": "L3",
+  "seed": 48486,
+  "split": "train",
+  "query": {
+    "diameter": {
+      "value": 45,
+      "unit": "mm",
+      "value_si": 0.045
+    }
+  },
+  "requested_shape": null,
+  "reference_shape": "circular_disk",
+  "objects": [
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.025277892258512652,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.050555784517025304,
+        "width": 0.050555784517025304,
+        "height": 0.03,
+        "radius": 0.025277892258512652,
+        "diameter": 0.050555784517025304,
+        "footprint_area": 0.0020073892290735653,
+        "volume": 6.022167687220696e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "cylinder",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.0198783988566533,
+        "height_m": 0.1,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.0397567977133066,
+        "width": 0.0397567977133066,
+        "height": 0.1,
+        "radius": 0.0198783988566533,
+        "diameter": 0.0397567977133066,
+        "footprint_area": 0.001241402665313502,
+        "volume": 0.0001241402665313502,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    },
+    {
+      "category": "circular_disk",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.0225,
+        "height_m": 0.03,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.045,
+        "width": 0.045,
+        "height": 0.03,
+        "radius": 0.0225,
+        "diameter": 0.045,
+        "footprint_area": 0.0015904312808798326,
+        "volume": 4.7712938426394975e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    }
+  ],
+  "target_index": 2,
+  "target_id": "object_2",
+  "distractor_ids": [
+    "object_0",
+    "object_1"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.01,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.2,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 3
+  },
+  "separation": [
+    {
+      "attribute": "diameter",
+      "minimum_si": 0.005,
+      "actual_si": 0.0052432022866934005,
+      "dimension": 1
+    },
+    {
+      "attribute": "diameter",
+      "minimum_si": 0.005,
+      "actual_si": 0.005555784517025306,
+      "dimension": 1
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "cfac4a05a68670f554ba926f48aceef3cca6d950f00290b621b700ea0890ddf1",
+  "constraint_necessity": {
+    "diameter": true
+  },
+  "target_measurement_ranks": {
+    "diameter": 1
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "3199a5c672e1f8ed0483f2b3c2afa229ae8eb1e77c6cbcc2d0a6133a51f42efb",
+  "scenario_id": "MOU_diameter_cross_shape_L3_48486_3199a5c672"
+}

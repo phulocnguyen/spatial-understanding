@@ -1,0 +1,330 @@
+{
+  "date": "2026-10-19",
+  "benchmark": "Benchmark",
+  "completed_runtime_episodes": 6,
+  "successful_manipulations": 3,
+  "failed_or_short_smokes": 3,
+  "accepted_demonstrations": 0,
+  "policy_evaluations": 0,
+  "episodes": [
+    {
+      "case": "capacity",
+      "directory": "datasets/smoke/capacity/20261019T225844346026Z",
+      "success": false,
+      "termination_reason": "timeout",
+      "transitions": 540,
+      "native_validation": {
+        "episodes": 1,
+        "successes": 0,
+        "transitions": 540
+      },
+      "cameras": {
+        "top": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "left": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "right": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "wrist": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        }
+      },
+      "video_files": [
+        "datasets/smoke/capacity/20261019T225844346026Z/videos/episode_0000_left.mp4",
+        "datasets/smoke/capacity/20261019T225844346026Z/videos/episode_0000_right.mp4",
+        "datasets/smoke/capacity/20261019T225844346026Z/videos/episode_0000_top.mp4",
+        "datasets/smoke/capacity/20261019T225844346026Z/videos/episode_0000_wrist.mp4"
+      ],
+      "accepted_demonstration": false
+    },
+    {
+      "case": "capacity",
+      "directory": "datasets/smoke/capacity_rim/20261019T230232569163Z",
+      "success": true,
+      "termination_reason": "success",
+      "transitions": 62,
+      "native_validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 62
+      },
+      "cameras": {
+        "top": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "left": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "right": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "wrist": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        }
+      },
+      "video_files": [
+        "datasets/smoke/capacity_rim/20261019T230232569163Z/videos/episode_0000_left.mp4",
+        "datasets/smoke/capacity_rim/20261019T230232569163Z/videos/episode_0000_right.mp4",
+        "datasets/smoke/capacity_rim/20261019T230232569163Z/videos/episode_0000_top.mp4",
+        "datasets/smoke/capacity_rim/20261019T230232569163Z/videos/episode_0000_wrist.mp4"
+      ],
+      "accepted_demonstration": false
+    },
+    {
+      "case": "component_dimension",
+      "directory": "datasets/smoke/component/20261019T230119490558Z",
+      "success": false,
+      "termination_reason": "timeout",
+      "transitions": 60,
+      "native_validation": {
+        "episodes": 1,
+        "successes": 0,
+        "transitions": 60
+      },
+      "cameras": {
+        "top": {
+          "frames": 40,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "left": {
+          "frames": 40,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "right": {
+          "frames": 40,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "wrist": {
+          "frames": 40,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        }
+      },
+      "video_files": [
+        "datasets/smoke/component/20261019T230119490558Z/videos/episode_0000_left.mp4",
+        "datasets/smoke/component/20261019T230119490558Z/videos/episode_0000_right.mp4",
+        "datasets/smoke/component/20261019T230119490558Z/videos/episode_0000_top.mp4",
+        "datasets/smoke/component/20261019T230119490558Z/videos/episode_0000_wrist.mp4"
+      ],
+      "accepted_demonstration": false
+    },
+    {
+      "case": "component_dimension",
+      "directory": "datasets/smoke/component_full/20261019T230303325204Z",
+      "success": false,
+      "termination_reason": "timeout",
+      "transitions": 540,
+      "native_validation": {
+        "episodes": 1,
+        "successes": 0,
+        "transitions": 540
+      },
+      "cameras": {
+        "top": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "left": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "right": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "wrist": {
+          "frames": 360,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        }
+      },
+      "video_files": [
+        "datasets/smoke/component_full/20261019T230303325204Z/videos/episode_0000_left.mp4",
+        "datasets/smoke/component_full/20261019T230303325204Z/videos/episode_0000_right.mp4",
+        "datasets/smoke/component_full/20261019T230303325204Z/videos/episode_0000_top.mp4",
+        "datasets/smoke/component_full/20261019T230303325204Z/videos/episode_0000_wrist.mp4"
+      ],
+      "accepted_demonstration": false
+    },
+    {
+      "case": "component_dimension",
+      "directory": "datasets/smoke/component_near_head/20261019T230810274687Z",
+      "success": true,
+      "termination_reason": "success",
+      "transitions": 61,
+      "native_validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 61
+      },
+      "cameras": {
+        "top": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "left": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "right": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "wrist": {
+          "frames": 41,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        }
+      },
+      "video_files": [
+        "datasets/smoke/component_near_head/20261019T230810274687Z/videos/episode_0000_left.mp4",
+        "datasets/smoke/component_near_head/20261019T230810274687Z/videos/episode_0000_right.mp4",
+        "datasets/smoke/component_near_head/20261019T230810274687Z/videos/episode_0000_top.mp4",
+        "datasets/smoke/component_near_head/20261019T230810274687Z/videos/episode_0000_wrist.mp4"
+      ],
+      "accepted_demonstration": false
+    },
+    {
+      "case": "nested_dimension",
+      "directory": "datasets/smoke/nested/20261019T230923765184Z",
+      "success": true,
+      "termination_reason": "success",
+      "transitions": 56,
+      "native_validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "cameras": {
+        "top": {
+          "frames": 37,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "left": {
+          "frames": 37,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "right": {
+          "frames": 37,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        },
+        "wrist": {
+          "frames": 37,
+          "resolution": [
+            256,
+            256
+          ],
+          "fps": 20
+        }
+      },
+      "video_files": [
+        "datasets/smoke/nested/20261019T230923765184Z/videos/episode_0000_left.mp4",
+        "datasets/smoke/nested/20261019T230923765184Z/videos/episode_0000_right.mp4",
+        "datasets/smoke/nested/20261019T230923765184Z/videos/episode_0000_top.mp4",
+        "datasets/smoke/nested/20261019T230923765184Z/videos/episode_0000_wrist.mp4"
+      ],
+      "accepted_demonstration": false
+    }
+  ],
+  "note": "Short component smoke used a 2s timeout intentionally. Earlier failed cup/tool grasps were retained; corrected rim/near-head grasps succeeded. Single seeds do not establish broad reliability."
+}

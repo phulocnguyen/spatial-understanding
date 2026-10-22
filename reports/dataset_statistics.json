@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "attempted": 6,
+    "successful_manipulations": 3,
+    "failed_attempts": 3,
+    "incomplete_or_running": 0,
+    "accepted_demonstrations": 0
+  },
+  "by_case": {
+    "component_dimension": 3,
+    "nested_dimension": 1,
+    "capacity": 2
+  },
+  "by_condition": {
+    "shape_conditioned": 6
+  },
+  "by_level": {
+    "L5": 4,
+    "L3": 2
+  },
+  "identification_accuracy": null,
+  "note": "Oracle manipulation collection does not measure VLA identification accuracy; use evaluate.py with policy predictions"
+}

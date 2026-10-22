@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "area",
+  "case_id": "MOU-2.1",
+  "family": "geometric_properties",
+  "condition": "same_shape",
+  "level": "L1",
+  "seed": 52830,
+  "split": "train",
+  "query": {
+    "footprint_area": {
+      "value": 25,
+      "unit": "cm2",
+      "value_si": 0.0025
+    }
+  },
+  "requested_shape": "rectangular_plate",
+  "reference_shape": "rectangular_plate",
+  "objects": [
+    {
+      "category": "rectangular_plate",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.029251150352919524,
+          0.05,
+          0.03
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.029251150352919524,
+        "width": 0.05,
+        "height": 0.03,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0014625575176459762,
+        "volume": 4.387672552937928e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "rectangular_plate",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.044642857142857144,
+          0.056,
+          0.03
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.044642857142857144,
+        "width": 0.056,
+        "height": 0.03,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0025,
+        "volume": 7.5e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "rectangular_plate",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.0686233230523682,
+          0.052000000000000005,
+          0.03
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.0686233230523682,
+        "width": 0.052000000000000005,
+        "height": 0.03,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.003568412798723146,
+        "volume": 0.00010705238396169438,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    }
+  ],
+  "target_index": 1,
+  "target_id": "object_1",
+  "distractor_ids": [
+    "object_0",
+    "object_2"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.02,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.4,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 3
+  },
+  "separation": [
+    {
+      "attribute": "footprint_area",
+      "minimum_si": 0.001,
+      "actual_si": 0.0010374424823540239,
+      "dimension": 2
+    },
+    {
+      "attribute": "footprint_area",
+      "minimum_si": 0.001,
+      "actual_si": 0.0010684127987231466,
+      "dimension": 2
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "0d7e2f2419fdc1d3ccc7da89df4ced747b65752888342a9005a8e55e711967a7",
+  "constraint_necessity": {
+    "footprint_area": true
+  },
+  "target_measurement_ranks": {
+    "footprint_area": 1
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "44f1a0bd27fdd8f17a77496bce9c5f25643577aa97c8bfc12ce8a3d5df69b5d8",
+  "scenario_id": "MOU_area_same_shape_L1_52830_44f1a0bd27"
+}

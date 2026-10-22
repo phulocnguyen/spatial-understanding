@@ -1,0 +1,24 @@
+slots: 216
+target_rank_counts:
+  length:length:rank_0: 24
+  height:height:rank_0: 24
+  diameter:diameter:rank_0: 24
+  height:height:rank_1: 24
+  length:length:rank_1: 24
+  length:length:rank_2: 24
+  diameter:diameter:rank_1: 24
+  diameter:diameter:rank_2: 24
+  height:height:rank_2: 24
+by_case:
+  length: 72
+  height: 72
+  diameter: 72
+by_condition:
+  same_shape: 72
+  cross_shape: 72
+  shape_conditioned: 72
+by_level:
+  L1: 72
+  L2: 72
+  L3: 72
+infeasible_cells: 0

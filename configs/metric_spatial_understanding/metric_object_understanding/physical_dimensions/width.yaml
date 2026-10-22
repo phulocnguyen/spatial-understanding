@@ -1,0 +1,22 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+task: metric_spatial_understanding/metric_object_understanding
+case: width
+condition: shape_conditioned
+level: L3
+requested_shape: rectangular_plate
+measurements:
+  width:
+    value: 6
+    unit: cm
+split: train
+seed: 712
+num_episodes: 1
+max_attempts: 1
+success_target: null
+capture_profile: full
+video: true
+output_dir: datasets/metric_spatial_understanding/mou/width

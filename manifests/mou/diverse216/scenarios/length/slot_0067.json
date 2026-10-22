@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "length",
+  "case_id": "MOU-1.1",
+  "family": "physical_dimensions",
+  "condition": "shape_conditioned",
+  "level": "L2",
+  "seed": 7479,
+  "split": "train",
+  "query": {
+    "length": {
+      "value": 14,
+      "unit": "cm",
+      "value_si": 0.14
+    }
+  },
+  "requested_shape": "rectangular_bar",
+  "reference_shape": "rectangular_bar",
+  "objects": [
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.14,
+          0.055,
+          0.08
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.14,
+        "width": 0.055,
+        "height": 0.08,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.007700000000000001,
+        "volume": 0.0006160000000000001,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "incorrect_shape_correct_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": true
+    },
+    {
+      "category": "rectangular_bar",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.14,
+          0.04,
+          0.035
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.14,
+        "width": 0.04,
+        "height": 0.035,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.005600000000000001,
+        "volume": 0.00019600000000000005,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "rectangular_bar",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.1554493267290886,
+          0.04,
+          0.035
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.1554493267290886,
+        "width": 0.04,
+        "height": 0.035,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.006217973069163544,
+        "volume": 0.00021762905742072405,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.12322631807350448,
+          0.055,
+          0.08
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.12322631807350448,
+        "width": 0.055,
+        "height": 0.08,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.006777447494042747,
+        "volume": 0.0005421957995234198,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_3",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    }
+  ],
+  "target_index": 1,
+  "target_id": "object_1",
+  "distractor_ids": [
+    "object_0",
+    "object_2",
+    "object_3"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.015,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.3,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5
+    },
+    "effective_objects": 4
+  },
+  "separation": [
+    {
+      "attribute": "length",
+      "minimum_si": 0.015,
+      "actual_si": 0.01544932672908858,
+      "dimension": 1
+    },
+    {
+      "attribute": "length",
+      "minimum_si": 0.015,
+      "actual_si": 0.01677368192649553,
+      "dimension": 1
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "705d83f18eb753f6d9f9ce13c7694fa7da1090372c192f891c2f3dc668ab0dfd",
+  "constraint_necessity": {
+    "length": true
+  },
+  "target_measurement_ranks": {
+    "length": 1
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "d4488d23a3f268422eba5972f02ba9cfae0b54f253252253dbca9eeac779c6c0",
+  "scenario_id": "MOU_length_shape_conditioned_L2_7479_d4488d23a3"
+}

@@ -1,0 +1,18 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+case: diameter
+shapes:
+- cylinder
+- circular_disk
+measurement: diameter
+unit: mm
+values:
+- 42
+- 45
+- 48
+- 50
+- 52
+- 54

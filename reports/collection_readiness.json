@@ -1,0 +1,270 @@
+{
+  "status": "all_11_presets_passed_single_seed_physical_smoke",
+  "offline_report": "collection_preflight.json",
+  "unit_tests_passed": 21,
+  "diagnostic_settings": {
+    "seed": 712,
+    "split": "diagnostic",
+    "path_tracing_samples": 8,
+    "timeout_sim_seconds": 6,
+    "resolution": [
+      256,
+      256
+    ]
+  },
+  "initial_failures": [
+    {
+      "case": "height",
+      "returncode": 0,
+      "wall_seconds": 90.5,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/height/20261020T043431408706Z/episode_0000/metadata.json"
+    }
+  ],
+  "fix": "Upright cylinders are grasped 2 cm below their top to avoid palm collision. Height, radius, and diameter were retested.",
+  "latest_cases": [
+    {
+      "case": "area",
+      "returncode": 0,
+      "wall_seconds": 44.2,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/area/20261020T043304789818Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 60
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/area/20261020T043304789818Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/area/20261020T043304789818Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/area/20261020T043304789818Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/area/20261020T043304789818Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "volume",
+      "returncode": 0,
+      "wall_seconds": 42.4,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/volume/20261020T043348989165Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/volume/20261020T043348989165Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/volume/20261020T043348989165Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/volume/20261020T043348989165Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/volume/20261020T043348989165Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "height",
+      "returncode": 0,
+      "wall_seconds": 50.1,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/height/20261020T043837665013Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 71
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/height/20261020T043837665013Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/height/20261020T043837665013Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/height/20261020T043837665013Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/height/20261020T043837665013Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "radius",
+      "returncode": 0,
+      "wall_seconds": 41.0,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/radius/20261020T043921486141Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/radius/20261020T043921486141Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/radius/20261020T043921486141Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/radius/20261020T043921486141Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/radius/20261020T043921486141Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "component_dimension",
+      "returncode": 0,
+      "wall_seconds": 42.9,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/component_dimension/20261020T043645627673Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 58
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/component_dimension/20261020T043645627673Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/component_dimension/20261020T043645627673Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/component_dimension/20261020T043645627673Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/component_dimension/20261020T043645627673Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "nested_dimension",
+      "returncode": 0,
+      "wall_seconds": 42.7,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/nested_dimension/20261020T043727911845Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/nested_dimension/20261020T043727911845Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/nested_dimension/20261020T043727911845Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/nested_dimension/20261020T043727911845Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/nested_dimension/20261020T043727911845Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "capacity",
+      "returncode": 0,
+      "wall_seconds": 48.0,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/capacity/20261020T043304717141Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 60
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/capacity/20261020T043304717141Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/capacity/20261020T043304717141Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/capacity/20261020T043304717141Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/capacity/20261020T043304717141Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "diameter",
+      "returncode": 0,
+      "wall_seconds": 43.7,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/diameter/20261020T043837673216Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 57
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/diameter/20261020T043837673216Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/diameter/20261020T043837673216Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/diameter/20261020T043837673216Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit_retest/diameter/20261020T043837673216Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "length",
+      "returncode": 0,
+      "wall_seconds": 43.7,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/length/20261020T043435493617Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 61
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/length/20261020T043435493617Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/length/20261020T043435493617Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/length/20261020T043435493617Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/length/20261020T043435493617Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "width",
+      "returncode": 0,
+      "wall_seconds": 44.9,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/width/20261020T043519111899Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 60
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/width/20261020T043519111899Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/width/20261020T043519111899Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/width/20261020T043519111899Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/width/20261020T043519111899Z/videos/episode_0000_wrist.mp4"
+      ]
+    },
+    {
+      "case": "multi_dimension",
+      "returncode": 0,
+      "wall_seconds": 43.3,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/multi_dimension/20261020T043604309549Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 57
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/multi_dimension/20261020T043604309549Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/multi_dimension/20261020T043604309549Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/multi_dimension/20261020T043604309549Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/task_audit/multi_dimension/20261020T043604309549Z/videos/episode_0000_wrist.mp4"
+      ]
+    }
+  ],
+  "limits": [
+    "One physical seed per preset does not establish multi-seed or all-shape reliability.",
+    "Oracle success is not VLA identification accuracy.",
+    "Visual measurement evidence remains unverified; episodes are not accepted training demonstrations.",
+    "Keep diagnostic/eval splits separate from training; default plans have limited target-category coverage."
+  ],
+  "production_render_retest": {
+    "metadata": "Benchmark/datasets/diagnostic/height_production_render/20261020T043940962830Z/episode_0000/metadata.json",
+    "validation": {
+      "episodes": 1,
+      "successes": 1,
+      "transitions": 71
+    },
+    "path_tracing_samples": 64,
+    "videos": [
+      "Benchmark/datasets/diagnostic/height_production_render/20261020T043940962830Z/videos/episode_0000_left.mp4",
+      "Benchmark/datasets/diagnostic/height_production_render/20261020T043940962830Z/videos/episode_0000_right.mp4",
+      "Benchmark/datasets/diagnostic/height_production_render/20261020T043940962830Z/videos/episode_0000_top.mp4",
+      "Benchmark/datasets/diagnostic/height_production_render/20261020T043940962830Z/videos/episode_0000_wrist.mp4"
+    ]
+  }
+}

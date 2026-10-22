@@ -1,0 +1,32 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Fixed clutter and appearance: only the measurement gap changes.
+# V1 activates L1-L3; finer L4-L5 need rendered visibility qualification.
+L1:
+  minimum_linear_gap_m: 0.02
+  objects: 3
+  appearance: similar
+  relative_derived_gap: 0.4
+L2:
+  minimum_linear_gap_m: 0.015
+  objects: 3
+  appearance: similar
+  relative_derived_gap: 0.3
+L3:
+  minimum_linear_gap_m: 0.01
+  objects: 3
+  appearance: similar
+  relative_derived_gap: 0.2
+L4:
+  minimum_linear_gap_m: 0.0075
+  objects: 3
+  appearance: similar
+  relative_derived_gap: 0.15
+L5:
+  minimum_linear_gap_m: 0.005
+  objects: 3
+  appearance: similar
+  relative_derived_gap: 0.1

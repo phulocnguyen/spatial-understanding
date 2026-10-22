@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "height",
+  "case_id": "MOU-1.3",
+  "family": "physical_dimensions",
+  "condition": "shape_conditioned",
+  "level": "L3",
+  "seed": 58185,
+  "split": "train",
+  "query": {
+    "height": {
+      "value": 12,
+      "unit": "cm",
+      "value_si": 0.12
+    }
+  },
+  "requested_shape": "cylinder",
+  "reference_shape": "cylinder",
+  "objects": [
+    {
+      "category": "cylinder",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.03,
+        "height_m": 0.13055932527925035,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.06,
+        "width": 0.06,
+        "height": 0.13055932527925035,
+        "radius": 0.03,
+        "diameter": 0.06,
+        "footprint_area": 0.0028274333882308137,
+        "volume": 0.00036914779543943975,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.1,
+          0.055,
+          0.130756863510142
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.1,
+        "width": 0.055,
+        "height": 0.130756863510142,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0055000000000000005,
+        "volume": 0.0007191627493057811,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    },
+    {
+      "category": "cylinder",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.03,
+        "height_m": 0.12,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.06,
+        "width": 0.06,
+        "height": 0.12,
+        "radius": 0.03,
+        "diameter": 0.06,
+        "footprint_area": 0.0028274333882308137,
+        "volume": 0.0003392920065876976,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.1,
+          0.055,
+          0.12
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.1,
+        "width": 0.055,
+        "height": 0.12,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0055000000000000005,
+        "volume": 0.00066,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_3",
+      "distractor_role": "incorrect_shape_correct_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": true
+    }
+  ],
+  "target_index": 2,
+  "target_id": "object_2",
+  "distractor_ids": [
+    "object_0",
+    "object_1",
+    "object_3"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.01,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.2,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 4
+  },
+  "separation": [
+    {
+      "attribute": "height",
+      "minimum_si": 0.01,
+      "actual_si": 0.010559325279250353,
+      "dimension": 1
+    },
+    {
+      "attribute": "height",
+      "minimum_si": 0.01,
+      "actual_si": 0.010756863510142017,
+      "dimension": 1
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "be6e6d1cdccab8b5a8e53bcfdd0c76b4bb4f1468c8e3e127da12b586104b80c7",
+  "constraint_necessity": {
+    "height": true
+  },
+  "target_measurement_ranks": {
+    "height": 0
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "afb41a121a574ae35e91e0301de566da30ac2f8ae1132929b7ecd2737bbaa3f3",
+  "scenario_id": "MOU_height_shape_conditioned_L3_58185_afb41a121a"
+}

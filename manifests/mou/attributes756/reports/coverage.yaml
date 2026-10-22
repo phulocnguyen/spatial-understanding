@@ -1,0 +1,40 @@
+slots: 756
+target_rank_counts:
+  length:length:rank_0: 36
+  width:width:rank_0: 33
+  height:height:rank_0: 36
+  radius:radius:rank_0: 36
+  diameter:diameter:rank_0: 36
+  area:footprint_area:rank_0: 37
+  volume:volume:rank_0: 35
+  length:length:rank_1: 36
+  width:width:rank_1: 33
+  height:height:rank_1: 36
+  radius:radius:rank_1: 36
+  diameter:diameter:rank_1: 36
+  area:footprint_area:rank_1: 36
+  volume:volume:rank_1: 37
+  length:length:rank_2: 36
+  height:height:rank_2: 36
+  radius:radius:rank_2: 36
+  diameter:diameter:rank_2: 36
+  width:width:rank_2: 42
+  area:footprint_area:rank_2: 35
+  volume:volume:rank_2: 36
+by_case:
+  length: 108
+  width: 108
+  height: 108
+  radius: 108
+  diameter: 108
+  area: 108
+  volume: 108
+by_condition:
+  same_shape: 252
+  cross_shape: 252
+  shape_conditioned: 252
+by_level:
+  L1: 252
+  L2: 252
+  L3: 252
+infeasible_cells: 0

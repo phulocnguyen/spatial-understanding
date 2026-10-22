@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "volume",
+  "case_id": "MOU-2.2",
+  "family": "geometric_properties",
+  "condition": "cross_shape",
+  "level": "L3",
+  "seed": 26065,
+  "split": "train",
+  "query": {
+    "volume": {
+      "value": 130,
+      "unit": "cm3",
+      "value_si": 0.00013
+    }
+  },
+  "requested_shape": null,
+  "reference_shape": "box",
+  "objects": [
+    {
+      "category": "sphere",
+      "geometry": {
+        "kind": "sphere",
+        "radius_m": 0.02907050758118045
+      },
+      "physical_properties_si": {
+        "length": 0.0581410151623609,
+        "width": 0.0581410151623609,
+        "height": 0.0581410151623609,
+        "radius": 0.02907050758118045,
+        "diameter": 0.0581410151623609,
+        "footprint_area": 0.0026549423932736927,
+        "volume": 0.00010290736396168034,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    },
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.085,
+          0.044,
+          0.034759358288770054
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.085,
+        "width": 0.044,
+        "height": 0.034759358288770054,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.00374,
+        "volume": 0.00013,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.095,
+          0.04,
+          0.026817867792789607
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.095,
+        "width": 0.04,
+        "height": 0.026817867792789607,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0038,
+        "volume": 0.00010190789761260051,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    }
+  ],
+  "target_index": 1,
+  "target_id": "object_1",
+  "distractor_ids": [
+    "object_0",
+    "object_2"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.01,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.2,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 3
+  },
+  "separation": [
+    {
+      "attribute": "volume",
+      "minimum_si": 2.6e-05,
+      "actual_si": 2.7092636038319714e-05,
+      "dimension": 3
+    },
+    {
+      "attribute": "volume",
+      "minimum_si": 2.6e-05,
+      "actual_si": 2.8092102387399477e-05,
+      "dimension": 3
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "7044fa06beae84b27966c0c0195bd5beb6fecb538102c6ad260cc405b56bdc7f",
+  "constraint_necessity": {
+    "volume": true
+  },
+  "target_measurement_ranks": {
+    "volume": 2
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "ab2a027c9e8b88193d62d039c3a515cbedcee5450668c6d2d5f0379d461dd549",
+  "scenario_id": "MOU_volume_cross_shape_L3_26065_ab2a027c9e"
+}

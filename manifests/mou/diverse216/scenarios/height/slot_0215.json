@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "height",
+  "case_id": "MOU-1.3",
+  "family": "physical_dimensions",
+  "condition": "cross_shape",
+  "level": "L3",
+  "seed": 22428,
+  "split": "train",
+  "query": {
+    "height": {
+      "value": 12,
+      "unit": "cm",
+      "value_si": 0.12
+    }
+  },
+  "requested_shape": null,
+  "reference_shape": "cylinder",
+  "objects": [
+    {
+      "category": "cylinder",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.03,
+        "height_m": 0.10927629198741776,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.06,
+        "width": 0.06,
+        "height": 0.10927629198741776,
+        "radius": 0.03,
+        "diameter": 0.06,
+        "footprint_area": 0.0028274333882308137,
+        "volume": 0.0003089714365072843,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    },
+    {
+      "category": "cylinder",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.03,
+        "height_m": 0.12,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.06,
+        "width": 0.06,
+        "height": 0.12,
+        "radius": 0.03,
+        "diameter": 0.06,
+        "footprint_area": 0.0028274333882308137,
+        "volume": 0.0003392920065876976,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "box",
+      "geometry": {
+        "kind": "box",
+        "size_m": [
+          0.1,
+          0.055,
+          0.10922498581540088
+        ]
+      },
+      "physical_properties_si": {
+        "length": 0.1,
+        "width": 0.055,
+        "height": 0.10922498581540088,
+        "radius": null,
+        "diameter": null,
+        "footprint_area": 0.0055000000000000005,
+        "volume": 0.0006007374219847049,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    }
+  ],
+  "target_index": 1,
+  "target_id": "object_1",
+  "distractor_ids": [
+    "object_0",
+    "object_2"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.01,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.2,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5
+    },
+    "effective_objects": 3
+  },
+  "separation": [
+    {
+      "attribute": "height",
+      "minimum_si": 0.01,
+      "actual_si": 0.010775014184599113,
+      "dimension": 1
+    },
+    {
+      "attribute": "height",
+      "minimum_si": 0.01,
+      "actual_si": 0.01072370801258224,
+      "dimension": 1
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "f6d79ff78faf9ec7861ae5d30aa0b7236ed502ff3974a53429fa0be64d3b91ef",
+  "constraint_necessity": {
+    "height": true
+  },
+  "target_measurement_ranks": {
+    "height": 2
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "6e501118b9ac5348bf7bf3b877043f4053a0d99bac0fd26300bc2761ef3c720f",
+  "scenario_id": "MOU_height_cross_shape_L3_22428_6e501118b9"
+}

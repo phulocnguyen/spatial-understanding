@@ -1,0 +1,265 @@
+{
+  "tasks": {
+    "passed": true,
+    "presets_checked": [
+      "configs/metric_spatial_understanding/metric_object_understanding/geometric_properties/area.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/geometric_properties/capacity.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/geometric_properties/volume.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/physical_dimensions/diameter.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/physical_dimensions/height.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/physical_dimensions/length.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/physical_dimensions/radius.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/physical_dimensions/width.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/structured_objects/component_dimension.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/structured_objects/multi_dimension.yaml",
+      "configs/metric_spatial_understanding/metric_object_understanding/structured_objects/nested_dimension.yaml"
+    ],
+    "seeds_per_cell": 5,
+    "counts": {
+      "valid_scenes": 1858,
+      "excluded_scenes": 317
+    },
+    "errors": [],
+    "excluded_cells": {
+      "width/rectangular_plate/cross_shape/L1": 5,
+      "width/rectangular_plate/shape_conditioned/L1": 5,
+      "width/box/same_shape/L1": 5,
+      "width/box/shape_conditioned/L1": 5,
+      "radius/cylinder/same_shape/L1": 5,
+      "radius/cylinder/same_shape/L2": 5,
+      "radius/cylinder/same_shape/L3": 5,
+      "radius/cylinder/cross_shape/L1": 5,
+      "radius/cylinder/cross_shape/L2": 5,
+      "radius/cylinder/cross_shape/L3": 5,
+      "radius/cylinder/shape_conditioned/L1": 5,
+      "radius/cylinder/shape_conditioned/L2": 5,
+      "radius/cylinder/shape_conditioned/L3": 5,
+      "radius/sphere/same_shape/L1": 5,
+      "radius/sphere/same_shape/L2": 5,
+      "radius/sphere/same_shape/L3": 5,
+      "radius/sphere/cross_shape/L1": 5,
+      "radius/sphere/cross_shape/L2": 5,
+      "radius/sphere/cross_shape/L3": 5,
+      "radius/sphere/shape_conditioned/L1": 5,
+      "radius/sphere/shape_conditioned/L2": 5,
+      "radius/sphere/shape_conditioned/L3": 5,
+      "radius/circular_disk/same_shape/L1": 5,
+      "radius/circular_disk/same_shape/L2": 5,
+      "radius/circular_disk/same_shape/L3": 5,
+      "radius/circular_disk/cross_shape/L1": 5,
+      "radius/circular_disk/cross_shape/L2": 5,
+      "radius/circular_disk/cross_shape/L3": 5,
+      "radius/circular_disk/shape_conditioned/L1": 5,
+      "radius/circular_disk/shape_conditioned/L2": 5,
+      "radius/circular_disk/shape_conditioned/L3": 5,
+      "radius/puck/same_shape/L1": 5,
+      "radius/puck/same_shape/L2": 5,
+      "radius/puck/same_shape/L3": 5,
+      "radius/puck/cross_shape/L1": 5,
+      "radius/puck/cross_shape/L2": 5,
+      "radius/puck/cross_shape/L3": 5,
+      "radius/puck/shape_conditioned/L1": 5,
+      "radius/puck/shape_conditioned/L2": 5,
+      "radius/puck/shape_conditioned/L3": 5,
+      "diameter/sphere/same_shape/L1": 5,
+      "diameter/sphere/cross_shape/L1": 5,
+      "diameter/sphere/shape_conditioned/L1": 5,
+      "diameter/cylinder/same_shape/L1": 5,
+      "diameter/cylinder/cross_shape/L1": 5,
+      "diameter/cylinder/shape_conditioned/L1": 5,
+      "diameter/circular_disk/same_shape/L1": 5,
+      "diameter/circular_disk/cross_shape/L1": 5,
+      "diameter/circular_disk/shape_conditioned/L1": 5,
+      "volume/cone/same_shape/L1": 3,
+      "volume/cone/same_shape/L2": 3,
+      "volume/cone/same_shape/L3": 5,
+      "volume/cone/same_shape/L4": 5,
+      "volume/cone/same_shape/L5": 5,
+      "volume/cone/cross_shape/L1": 3,
+      "volume/cone/cross_shape/L2": 3,
+      "volume/cone/cross_shape/L3": 4,
+      "volume/cone/cross_shape/L4": 4,
+      "volume/cone/cross_shape/L5": 4,
+      "volume/cone/shape_conditioned/L1": 3,
+      "volume/cone/shape_conditioned/L2": 3,
+      "volume/cone/shape_conditioned/L3": 4,
+      "volume/cone/shape_conditioned/L4": 4,
+      "volume/cone/shape_conditioned/L5": 4,
+      "multi_dimension/box/same_shape/L1": 5,
+      "multi_dimension/box/cross_shape/L1": 5,
+      "multi_dimension/box/shape_conditioned/L1": 5
+    },
+    "cells_without_counterfactual_control": {
+      "length/rectangular_bar/cross_shape/L1": 5,
+      "length/box/cross_shape/L1": 5,
+      "width/box/cross_shape/L1": 5,
+      "width/rectangular_container/cross_shape/L1": 5,
+      "height/cylinder/cross_shape/L1": 5,
+      "height/box/cross_shape/L1": 5,
+      "height/cone/cross_shape/L1": 5,
+      "area/circular_disk/cross_shape/L1": 5,
+      "area/rectangular_plate/cross_shape/L1": 5,
+      "area/box/cross_shape/L1": 5,
+      "volume/box/cross_shape/L1": 5,
+      "volume/sphere/cross_shape/L1": 5,
+      "volume/cone/cross_shape/L1": 2,
+      "capacity/cylindrical_container/cross_shape/L1": 5,
+      "capacity/rectangular_container/cross_shape/L1": 5,
+      "component_dimension/handled_tool/cross_shape/L1": 5,
+      "component_dimension/handled_paddle/cross_shape/L1": 5
+    }
+  },
+  "manifest": {
+    "path": "Benchmark/manifests/mou/validated30/plan.yaml",
+    "slots": 30,
+    "distinct_queries_by_case": {
+      "length": 3,
+      "width": 3,
+      "height": 3,
+      "radius": 3,
+      "diameter": 3,
+      "area": 3,
+      "volume": 3,
+      "capacity": 3,
+      "multi_dimension": 2,
+      "component_dimension": 2,
+      "nested_dimension": 2
+    },
+    "target_rank_counts": {
+      "length": {
+        "{'length': 1}": 3
+      },
+      "width": {
+        "{'width': 0}": 1,
+        "{'width': 2}": 2
+      },
+      "height": {
+        "{'height': 2}": 3
+      },
+      "radius": {
+        "{'radius': 0}": 2,
+        "{'radius': 2}": 1
+      },
+      "diameter": {
+        "{'diameter': 0}": 1,
+        "{'diameter': 1}": 2
+      },
+      "area": {
+        "{'footprint_area': 0}": 1,
+        "{'footprint_area': 1}": 2
+      },
+      "volume": {
+        "{'volume': 1}": 3
+      },
+      "capacity": {
+        "{'capacity': 1}": 1,
+        "{'capacity': 2}": 2
+      },
+      "multi_dimension": {
+        "{'length': 1, 'width': 0, 'height': 0}": 1,
+        "{'length': 1, 'width': 1, 'height': 0}": 1
+      },
+      "component_dimension": {
+        "{'handle_length': 2}": 1,
+        "{'handle_length': 1}": 1
+      },
+      "nested_dimension": {
+        "{'inner_width': 1, 'outer_width': 0}": 1,
+        "{'inner_width': 2, 'outer_width': 0}": 1
+      }
+    },
+    "target_shape_counts": {
+      "length": {
+        "rectangular_bar": 3
+      },
+      "width": {
+        "rectangular_plate": 3
+      },
+      "height": {
+        "cylinder": 3
+      },
+      "radius": {
+        "cylinder": 3
+      },
+      "diameter": {
+        "sphere": 3
+      },
+      "area": {
+        "circular_disk": 3
+      },
+      "volume": {
+        "box": 3
+      },
+      "capacity": {
+        "cylindrical_container": 3
+      },
+      "multi_dimension": {
+        "box": 2
+      },
+      "component_dimension": {
+        "handled_tool": 2
+      },
+      "nested_dimension": {
+        "rectangular_container": 2
+      }
+    },
+    "split_counts": {
+      "length": {
+        "eval": 1,
+        "train": 2
+      },
+      "width": {
+        "train": 3
+      },
+      "height": {
+        "train": 3
+      },
+      "radius": {
+        "train": 2,
+        "eval": 1
+      },
+      "diameter": {
+        "train": 2,
+        "eval": 1
+      },
+      "area": {
+        "eval": 1,
+        "train": 2
+      },
+      "volume": {
+        "train": 3
+      },
+      "capacity": {
+        "train": 3
+      },
+      "multi_dimension": {
+        "train": 2
+      },
+      "component_dimension": {
+        "train": 1,
+        "eval": 1
+      },
+      "nested_dimension": {
+        "eval": 1,
+        "train": 1
+      }
+    },
+    "warnings": [
+      "length: target always has the same measurement rank",
+      "length: only one target category; no target-shape generalization coverage",
+      "width: only one target category; no target-shape generalization coverage",
+      "height: target always has the same measurement rank",
+      "height: only one target category; no target-shape generalization coverage",
+      "radius: only one target category; no target-shape generalization coverage",
+      "diameter: only one target category; no target-shape generalization coverage",
+      "area: only one target category; no target-shape generalization coverage",
+      "volume: target always has the same measurement rank",
+      "volume: only one target category; no target-shape generalization coverage",
+      "capacity: only one target category; no target-shape generalization coverage",
+      "multi_dimension: only one target category; no target-shape generalization coverage",
+      "component_dimension: only one target category; no target-shape generalization coverage",
+      "nested_dimension: only one target category; no target-shape generalization coverage"
+    ]
+  },
+  "scope": "Offline geometry, configuration, placement and split checks only. Physical success and visible metric evidence require recorded episode review. A passing result is not a VLA accuracy or large-scale collection certification."
+}

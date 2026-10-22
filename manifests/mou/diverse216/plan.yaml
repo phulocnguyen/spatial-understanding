@@ -1,0 +1,2023 @@
+schema_version: 2
+benchmark: Benchmark
+category: metric_spatial_understanding
+task: metric_object_understanding
+seed: 712
+query_sampling: explicit_round_values
+planned_slots: 216
+generation_profile:
+  name: mou_diverse_v1
+  description: Metric identification with one instruction and a controlled pick/lift/hold
+    demonstration.
+  count: 216
+  seed: 712
+  conditions:
+  - same_shape
+  - cross_shape
+  - shape_conditioned
+  levels:
+  - L1
+  - L2
+  - L3
+  cases:
+    length:
+      shapes:
+      - rectangular_bar
+      - box
+      queries:
+      - length:
+          value: 10
+          unit: cm
+      - length:
+          value: 12
+          unit: cm
+      - length:
+          value: 14
+          unit: cm
+      - length:
+          value: 16
+          unit: cm
+    height:
+      shapes:
+      - box
+      - cylinder
+      queries:
+      - height:
+          value: 6
+          unit: cm
+      - height:
+          value: 8
+          unit: cm
+      - height:
+          value: 10
+          unit: cm
+      - height:
+          value: 12
+          unit: cm
+    diameter:
+      shapes:
+      - cylinder
+      - circular_disk
+      queries:
+      - diameter:
+          value: 45
+          unit: mm
+      - diameter:
+          value: 50
+          unit: mm
+  deferred:
+  - width
+  - radius
+  - area
+  - volume
+  - capacity
+  - multi_dimension
+  - component_dimension
+  - nested_dimension
+  maximum_grasp_width_m: 0.065
+accepted_demonstrations: 0
+episodes:
+- slot: 0
+  case: length
+  condition: same_shape
+  level: L1
+  split: eval
+  prompt: Pick the rectangular bar with local length 10 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0000.json
+  fingerprint: 308903da23a5903299c1c67fe5ecfa2c2ef7030c4cb4620046150e6ad8a6718f
+- slot: 1
+  case: height
+  condition: cross_shape
+  level: L2
+  split: eval
+  prompt: Pick the object with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0001.json
+  fingerprint: 7fc29ca26c54d347dc357e529f4e8bf4b841fa389b2463d1133b2ed3759547ed
+- slot: 2
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: eval
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0002.json
+  fingerprint: 504c0aec121c643d4fb9c30a1f9571bcd826224bbfb82630f70473234846775c
+- slot: 3
+  case: height
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the box with local height 6 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0003.json
+  fingerprint: 4ab71739a8af8b3a979ab25ffe75886f35481f7f741d4ea8eea7bcec86761d0d
+- slot: 4
+  case: length
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0004.json
+  fingerprint: 97f065ed82f58dadccc112d311d111ef882d53da33d047907664c8b3ac61c287
+- slot: 5
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the rectangular bar with local length 10 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0005.json
+  fingerprint: baa5c8ee2016dbfa0e36425e214af0a6e3b80342db23893ba49c5b7f45e7ad10
+- slot: 6
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0006.json
+  fingerprint: 2ba745e6f0148c8b6d6030004abaa21ca5ea4f0ecc79049927ae30add8f838c2
+- slot: 7
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0007.json
+  fingerprint: 9df1c76f6a9d935bb5253d540b1cbe95131bbd42658a44383bf809affe533ba8
+- slot: 8
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the box with local height 6 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0008.json
+  fingerprint: f7b6d99fce99c0ccfd53235452fe4ddf8cfea203a4447b305a4497df57a14a0c
+- slot: 9
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0009.json
+  fingerprint: 3aeb46ede5ba7e7da4233de9747d5c21de6c468150342321817a63f3cfcca108
+- slot: 10
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the box with local height 6 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0010.json
+  fingerprint: 5050f86ae17d7bae41a9b1d63ef7d2d8586dbc3242109f58f62afdb0324928c2
+- slot: 11
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0011.json
+  fingerprint: 117629d90b268096331bd4ae46d8a7fd90934a48c04d87cbc1ac249b452ea3da
+- slot: 12
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local height 6 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0012.json
+  fingerprint: b87a4c8f3f51020ea69d598ee91e559a32945482ee15a015a48efef2ac13be78
+- slot: 13
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 10 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0013.json
+  fingerprint: 0ee258713b12d9a1528218fd1a9ff6aade7fc5b44fe1959720ec1fecc83700a1
+- slot: 14
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0014.json
+  fingerprint: e6fc3bd0901323f3e9a34c3365900636e01e256e00433b30076a22f642626aea
+- slot: 15
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: eval
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0015.json
+  fingerprint: 103c6fe66e7d3ea4ee98d560670cbf7e97435b3928aad2d0f60b0cdb68200d62
+- slot: 16
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: eval
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0016.json
+  fingerprint: ce152b7d9f1a8b7ef8146820193d871a27d8fa72d231c530659987c0249e0dad
+- slot: 17
+  case: height
+  condition: same_shape
+  level: L3
+  split: eval
+  prompt: Pick the box with local height 6 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0017.json
+  fingerprint: 712ad28559f09ab0046a4b2a4e221108709205ca970c0b1c4814afe1f212e10d
+- slot: 18
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the rectangular bar with local length 10 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0018.json
+  fingerprint: 6ea45ed5255b017a74f0dccc4e15291982c9ad93d419777096f2c033f5989a99
+- slot: 19
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the box with local height 6 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0019.json
+  fingerprint: ac00c6a580a8684bc84a5d2b63932d3fe193cc8c12670dda71b613951abdec95
+- slot: 20
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0020.json
+  fingerprint: d5a5a37f625bbc41180c00a364ed6ee61a345a8576e4212038faca8aefe431ce
+- slot: 21
+  case: height
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0021.json
+  fingerprint: ccb0e3785fcde17b31ea07e3582a6c474c4ad4bb8f2edd28bb7b1067a1f30326
+- slot: 22
+  case: length
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 10 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0022.json
+  fingerprint: 561040337bb51e83d39ceece5a78269ba730a46ee749c30ecd0f9ffaab7d79d7
+- slot: 23
+  case: length
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the rectangular bar with local length 10 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0023.json
+  fingerprint: f982743bb6f393e94b3afc678f1e54945905b18dcc4bb8f38fcec64a15020976
+- slot: 24
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0024.json
+  fingerprint: a4611f7e9913db79351890ce05db526916eb9fe4f60a615cefa14f8692aeda80
+- slot: 25
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0025.json
+  fingerprint: 456e2e693d793ac5f98281840519639b9a9b363c4c45b1717de7f88944dd6b2b
+- slot: 26
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0026.json
+  fingerprint: f2e783df975373883f0e49c05772ee35ff2f80cba62c34d7b9cb2d8760a6cd12
+- slot: 27
+  case: length
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the rectangular bar with local length 12 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0027.json
+  fingerprint: 138e6e0a432c4233e292ff9a3cd7c740fea7ad711b8e47168776d15b991809af
+- slot: 28
+  case: height
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0028.json
+  fingerprint: 61ff1d7ed7321056f52e2dbeb9ae66b54369098406affb7c8b7474541e25e5fe
+- slot: 29
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0029.json
+  fingerprint: 741a8cfe03766cf1cdbb80c871f9491aa5a02b5a211b9cd7cf6f25d786c0789d
+- slot: 30
+  case: height
+  condition: same_shape
+  level: L1
+  split: eval
+  prompt: Pick the box with local height 8 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0030.json
+  fingerprint: f795f15b4bd4082592b93cf81d496e9cb4330ad4f2e1a8bb1083ebd69014732b
+- slot: 31
+  case: length
+  condition: cross_shape
+  level: L2
+  split: eval
+  prompt: Pick the object with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0031.json
+  fingerprint: 01661a9cbfe4ccd25064330ac870ea7b286a26b44f9ada26598936506cc34bf7
+- slot: 32
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: eval
+  prompt: Pick the rectangular bar with local length 12 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0032.json
+  fingerprint: 3a43b676740561f0dcedb41fe5834bb26c216f59638d4778274d014423ab7c2b
+- slot: 33
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0033.json
+  fingerprint: d3d5e49d9ee20f99fe14a87a38b7cc20d9ef45103505d1307a48049637c034f5
+- slot: 34
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0034.json
+  fingerprint: ce7bac96d16e4348cd6080c9ccb3baf15dbcfa846cb0edd8e2b1db4d3b81fc17
+- slot: 35
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the box with local height 8 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0035.json
+  fingerprint: ac2257e88d9d86b06d049c1b992b2299a4ee4ab0b0ed823478b74fff2d5ab940
+- slot: 36
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0036.json
+  fingerprint: f74e3a7c9cadb3c037df55777c7ed36514f71eca278413becd1bba94dd8f732b
+- slot: 37
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the box with local height 8 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0037.json
+  fingerprint: d0121ee3e2c2bba3ece67b2ef44a1305137fed944913ad713f117038b49a733d
+- slot: 38
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0038.json
+  fingerprint: 617563eb4e1b4096e0da2201bccdd5162aa783fd0f0671ade8f0767ed53501be
+- slot: 39
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local height 8 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0039.json
+  fingerprint: 6830641e390db6ed48ee787f7207ee172bd6bec07fa77c71a55f041433015cba
+- slot: 40
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 12 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0040.json
+  fingerprint: e68415a3c5767cb7e2ce7bc271c813e23f8aeb8e62f5c54aa01b4cecdebf4a74
+- slot: 41
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0041.json
+  fingerprint: ad9a10808f5d84107624e41ce42df3557b5ed2f516c9c1b4a99ced78056b61a1
+- slot: 42
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0042.json
+  fingerprint: f59559066de059f8c0110e6112eebec0250ea1cd398c65b8926e4655f91f1a4c
+- slot: 43
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0043.json
+  fingerprint: 55decd56146dc8df6256d956ecc3c159e6c63a32134c7ea44ef2d4d6cd50717d
+- slot: 44
+  case: height
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the box with local height 8 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0044.json
+  fingerprint: 9452376868e9c2c858268eb75befbdb6f9f1c808940f3adc11085ebed988ea30
+- slot: 45
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: eval
+  prompt: Pick the rectangular bar with local length 12 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0045.json
+  fingerprint: 88bc0c2e585e61a108f1c1311ec8c6f629ea53ff065b998ca2155c841bac9aed
+- slot: 46
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: eval
+  prompt: Pick the box with local height 8 cm. Lift and hold it; leave all other objects
+    untouched.
+  scenario_file: scenarios/height/slot_0046.json
+  fingerprint: 9126ae8679e8ae03e4f8dc1a155606d1fd15f1b44a23dc83a499e9c63c5b280b
+- slot: 47
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: eval
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0047.json
+  fingerprint: e0bbb7eeba616e9b3274880fb95f5ed48e84588cbb5c33af19b68b3890da18dc
+- slot: 48
+  case: height
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0048.json
+  fingerprint: fba305be2bf6afc850785a76c4fb125c0228286219b09a9df374229bc8ff98a5
+- slot: 49
+  case: length
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 12 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0049.json
+  fingerprint: f716094857656cae67ea9d934011cdcf00ecc225900d3f796b135ecf0ece7fd3
+- slot: 50
+  case: length
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the rectangular bar with local length 12 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0050.json
+  fingerprint: 9d069e5c61dbe3e64ca4aa03ac33b4e8f44f03bc8e269c7c93f9bae5540a9e0f
+- slot: 51
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0051.json
+  fingerprint: e3e1c9d536af3f7e1faa0097782423eb46917a05656a49474b6afb717cd520e7
+- slot: 52
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0052.json
+  fingerprint: 674f1cf77a27c1484e6a0c4adb9bd9da663f3bb6d2fc67399bfc3c2857748b27
+- slot: 53
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0053.json
+  fingerprint: db50058560c415a2664c4b11a673c193436a366f690d2bab4e901e307b480874
+- slot: 54
+  case: length
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the rectangular bar with local length 14 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0054.json
+  fingerprint: 87a25269f341d094e584b345c36a9100c5917f4d6465a9e21afb8775db8f56a3
+- slot: 55
+  case: height
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0055.json
+  fingerprint: 81b7525a52a8c2ab3caa0635c347b0c610133192809e9ba7f3299d50e6184ad7
+- slot: 56
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0056.json
+  fingerprint: 3df3f0d79bb6d22e867e707b05aa181e0f014dda0cac4c183b4eea088cb8079f
+- slot: 57
+  case: height
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the box with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0057.json
+  fingerprint: d13be1d50e2cdf74468390cf1419f28b7a11d2af6aaf78371b745f5c710ca9c7
+- slot: 58
+  case: length
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0058.json
+  fingerprint: 6fc4bd48c3c0f23844ea2d285cacae35f99eced55efb43ca08541b458c8ad2b9
+- slot: 59
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the rectangular bar with local length 14 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0059.json
+  fingerprint: d0f98c60b90117e1286c167b4cb303bf4d9cfb9bc995fbbd157f991f9cdd5af7
+- slot: 60
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: eval
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0060.json
+  fingerprint: 83cd047b4914d72d71599aa1555c3b18d46e935c07adddc55f46a73be0af61da
+- slot: 61
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: eval
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0061.json
+  fingerprint: a32dd9f21c3c45290d5933a2932f38e2415dc9ab0eb797adf88299d496f9eed6
+- slot: 62
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: eval
+  prompt: Pick the box with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0062.json
+  fingerprint: d72a382de18a36ef8f73a4685634de4fd54364e161a7284eef757da952f90845
+- slot: 63
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0063.json
+  fingerprint: e88d18d00bfd91aecb22ced4720c362b2f597b5684e616a498a3ede2316a1b12
+- slot: 64
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the box with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0064.json
+  fingerprint: fda9208af856687e95716f47e8bf5a3caee1cd4c68acfd43993643d790c89c5d
+- slot: 65
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0065.json
+  fingerprint: 9084140177854926a8ac2b7c2d82b66d069fc0886e6f2a23a4adb5a8752f89cb
+- slot: 66
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0066.json
+  fingerprint: e7de5d98cd5a1db431c479a8a157e914b4f33b77d6161cce3f9f8fdff4a36ebb
+- slot: 67
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 14 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0067.json
+  fingerprint: d4488d23a3f268422eba5972f02ba9cfae0b54f253252253dbca9eeac779c6c0
+- slot: 68
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0068.json
+  fingerprint: 1b7d2b523377309304f8e043972831625f2d38a69ab86684017c70b7bffe5396
+- slot: 69
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0069.json
+  fingerprint: 5b67ef4cfb63e54e1e48da326c7fa627e945d298cc8c57362ce0a83ee28b13c8
+- slot: 70
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0070.json
+  fingerprint: 5a5fc5fee06941ab2ece2978565bf347d2f49522cee8355ceb5d86c063fb237c
+- slot: 71
+  case: height
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the box with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0071.json
+  fingerprint: b18a67d37aa641bf3656264c7d4e277fbb0f4474114ace04dab5c3f4ad1d906a
+- slot: 72
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the rectangular bar with local length 14 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0072.json
+  fingerprint: a9a87f4400500f00e3e8ceae52ab9284ec49af0f957ada4fc5bb6c309f9aaa1b
+- slot: 73
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the box with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0073.json
+  fingerprint: 0df7359fec05c84d49637cb82d907d9d7c455c669a0417fd31eab42db22b73ac
+- slot: 74
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0074.json
+  fingerprint: 729734cf3fb988d903d5a0c35df2c8c58bef1e26337d5da339ce7c7dfb1d49c9
+- slot: 75
+  case: height
+  condition: cross_shape
+  level: L1
+  split: eval
+  prompt: Pick the object with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0075.json
+  fingerprint: eea8ef3a6cce69124beedba6fd05f4ded81571851b8d5f71174a29abf3d3acdf
+- slot: 76
+  case: length
+  condition: same_shape
+  level: L2
+  split: eval
+  prompt: Pick the rectangular bar with local length 14 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0076.json
+  fingerprint: 08a45aa20fe91b0177d131e5b683b9eb22ae46f6f706a614441e43af61698d73
+- slot: 77
+  case: length
+  condition: same_shape
+  level: L3
+  split: eval
+  prompt: Pick the rectangular bar with local length 14 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0077.json
+  fingerprint: 6afdac668ac212df6d427ad412c743fa8a109d4158fc142c1f8230d85f8140c2
+- slot: 78
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0078.json
+  fingerprint: 16dccb93932f77a6926e987903d2094d31a3784e3f6fdeba3e7005f5011cdb90
+- slot: 79
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0079.json
+  fingerprint: d705943844ec27f7bb3f6e4f4e2b24ec75c5e093201674f2f09214dc3ef714e8
+- slot: 80
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0080.json
+  fingerprint: 76d0cb8069e736dd0b02202e0f1cf49ec70f0e4ddcc25df7488598a16f7d96b6
+- slot: 81
+  case: length
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the rectangular bar with local length 16 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0081.json
+  fingerprint: b9a15d4330abad7c1f8b2f23e2273627341365c5c45719a61e59e9f93a27bfc1
+- slot: 82
+  case: height
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0082.json
+  fingerprint: 3c2646cbe5021f042d82dbae215b2d61c6b981c2705e7b02e57eec0ea57c45c5
+- slot: 83
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0083.json
+  fingerprint: 8c53bd9c2db890c2810f688e97126f0e6597ecedd68ba33d2cd7b84c2d6b65f9
+- slot: 84
+  case: height
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the box with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0084.json
+  fingerprint: 29c01e4330ea6258a0b8cf9428c15f84aaea59b9891651810b9e1014fad19812
+- slot: 85
+  case: length
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0085.json
+  fingerprint: 1f4ec34f1743a99a413d7e709b1de46f059805800101ec9c602531b446afc680
+- slot: 86
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the rectangular bar with local length 16 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0086.json
+  fingerprint: c1587464dfa7979c5dd48989675ccb130d7a79fa0d516d88e4e61bf0438d3a6c
+- slot: 87
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0087.json
+  fingerprint: 2560b0f40874913cfe94103cd1fc0daae12ce70d0472e565b204c2ef84428dc0
+- slot: 88
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0088.json
+  fingerprint: 347a57c6cbf0b177a459141618ba55852d3670ce4f0d4f648a8f5368afb2e578
+- slot: 89
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the box with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0089.json
+  fingerprint: 05f4309845e4485f59168604db7febe50723ad8dd63229867d81d71325ada3db
+- slot: 90
+  case: length
+  condition: cross_shape
+  level: L1
+  split: eval
+  prompt: Pick the object with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0090.json
+  fingerprint: f09389cf8809c56b23503f648a25966db8520374dceee52d5718eda42551c8d0
+- slot: 91
+  case: height
+  condition: same_shape
+  level: L2
+  split: eval
+  prompt: Pick the box with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0091.json
+  fingerprint: 6370e2f6de3b7fc596e20dc2601e3862b7e8889e070034305107d991a7d560b4
+- slot: 92
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: eval
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0092.json
+  fingerprint: 903f463935e4f1b83a2586cb6d7fd0fefcb38f5cdd28c062613c49a9c406eb53
+- slot: 93
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0093.json
+  fingerprint: 013981191e951a56ea945adeaee373b5711c5639ac78a0949304c686ad6f2202
+- slot: 94
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 16 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0094.json
+  fingerprint: b9cb2f6afb92d50142eb26b6cf0dc4148dedc77d1caf716246fbd6ebcacda5dd
+- slot: 95
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0095.json
+  fingerprint: 6f4abffa327f5f0a8f0e33dcb2a2ffd483bc023bab80e5693e6edb38126f7d5b
+- slot: 96
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0096.json
+  fingerprint: 10e9975ffec41d149490c85a7b3264dcd45db9b0549c85270f6f72ddb670025d
+- slot: 97
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0097.json
+  fingerprint: 1fe36123ab9033e69c2c4a7d085b80beac78bedd6fd67113765dc5fa55af9d2a
+- slot: 98
+  case: height
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the box with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0098.json
+  fingerprint: 3f9f2f403b78e24a6ca5de76870007c87da5e5d96bd1818cc591abe70b3a8d1a
+- slot: 99
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the rectangular bar with local length 16 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0099.json
+  fingerprint: dc8a2a5d556895e4d2307228e16122c2ea038bfb011f7f949b3cbeb1f4d507e2
+- slot: 100
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the box with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0100.json
+  fingerprint: dd6953fbc7c16c30f2e382ba23771b8ce40d2e82278326a02a2fbdc9c365f3ba
+- slot: 101
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0101.json
+  fingerprint: 117316a6be95512d8490609151f5b87c9460cc28881607b2f245910fb5aa11c9
+- slot: 102
+  case: height
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0102.json
+  fingerprint: b8845a41c4aa466303b4520f7d6f0db77ebcb2e7aef9507daddb7806526c161c
+- slot: 103
+  case: length
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the rectangular bar with local length 16 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0103.json
+  fingerprint: a61eb8546c1691ce43e1a8bba7389f147d51d8a3fbfeffa4a649d84ffc79c7ef
+- slot: 104
+  case: length
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the rectangular bar with local length 16 cm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/length/slot_0104.json
+  fingerprint: 31307f5fc55f6dbdc8bcada123fdf5d8217da52f0e6b5f2276def24733041727
+- slot: 105
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: eval
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0105.json
+  fingerprint: 46070c5dfd1aaedac59ff78cfab4024f76981474e3fe2fa4802629263b2e0138
+- slot: 106
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: eval
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0106.json
+  fingerprint: e2870a76d7fb04df2ce343115a1ff31cf082926b07f5a18befb6638fc8aa11ec
+- slot: 107
+  case: height
+  condition: cross_shape
+  level: L3
+  split: eval
+  prompt: Pick the object with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0107.json
+  fingerprint: 44f8d639ff1ee8081ee9b5ce48b23a9f3d46fe1d18292d0759caa46cf8d1e3a1
+- slot: 108
+  case: length
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the box with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0108.json
+  fingerprint: 22a1983bf9d0ec0d59c9a91be0f667c8dd361f50519a83a3089e426ad4abbd48
+- slot: 109
+  case: height
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0109.json
+  fingerprint: f27f0cbc784cb3b2e1b62963ce430a91b7a44cdd0aa7ff1590f894e4b68f81de
+- slot: 110
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0110.json
+  fingerprint: e2b803fc4c51170c7a7176cdff60a2301fa2af9dee91e52b108a30d7103162c7
+- slot: 111
+  case: height
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0111.json
+  fingerprint: ebe565907d57119c8fa3d7d54fc498ffd4dcaab40b9370215b9451d58719c75f
+- slot: 112
+  case: length
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0112.json
+  fingerprint: 8756ec4abdb24b18cdd9cbd86dc5b79956efb6106c3e38e80f7085c9007004f5
+- slot: 113
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the box with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0113.json
+  fingerprint: 86783b8684a27c42ef8db94726185baab85cadb5acbe8796d6119601d2290ab0
+- slot: 114
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0114.json
+  fingerprint: bd37afb42ce9bee3932dac648ff73a95569ab3ecbf1b5041bd2c1f0e97eb56f3
+- slot: 115
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0115.json
+  fingerprint: 503f669dd7fd8a16df1ec6fb445ca806c8c639fcc5d32a1fc62d07e4d4f9f256
+- slot: 116
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0116.json
+  fingerprint: e75320e5de0e4379ddf9dbea6be4108c87be92f37c52c01da9a32bd90523eda0
+- slot: 117
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0117.json
+  fingerprint: cfeda473d9ec0fcee9f1ff64a27bcfb2bc01ca628e8b7b499421f2d4d37d0f27
+- slot: 118
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0118.json
+  fingerprint: effbe11158f684a31e037392b294ec3d94aeca0d1c5060e9060a8903abfdaa31
+- slot: 119
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0119.json
+  fingerprint: 59fb7c07bd028a75c232ebfe1c790386f9389e894575d17de68321685a8ce91e
+- slot: 120
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: eval
+  prompt: Pick the cylinder with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0120.json
+  fingerprint: 543b6e6f32a1b9d3af95329551d280e8f128aa027118b2fe6ade586862144e0d
+- slot: 121
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: eval
+  prompt: Pick the box with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0121.json
+  fingerprint: 85b7d2e5fdb265e7544796fcd15f75889eae35b5ae7ccbf66f8879878708e7f8
+- slot: 122
+  case: length
+  condition: cross_shape
+  level: L3
+  split: eval
+  prompt: Pick the object with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0122.json
+  fingerprint: 539e7771ae14171c9f9d9190893f2f4864fbb222d4e7161f08305a8403729b03
+- slot: 123
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0123.json
+  fingerprint: 2382af8d4f1c646cdd7f6ab6078d6378be4de5d886f4a944d881166573eceb83
+- slot: 124
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0124.json
+  fingerprint: 9a9b613fa9857d816ce52abfa01af349e8395afa102eb701a0738df8a6cc46ca
+- slot: 125
+  case: height
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0125.json
+  fingerprint: 347ff35777359eba809f6ef599988460ae042c60f904244a189ffb326a762142
+- slot: 126
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0126.json
+  fingerprint: dd12ccece4520de0394ccd4e18895f474cdce24436d78d529b396502624ec192
+- slot: 127
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0127.json
+  fingerprint: 6f47d21323afb80acac939fee6dfa97f00a22f518576b0e092cd6995eb2233ff
+- slot: 128
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0128.json
+  fingerprint: 26f2d0e0f0e1a1ef64c4cb232ccc387904985fadc8cd388b96414245bb5998a0
+- slot: 129
+  case: height
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0129.json
+  fingerprint: 90aa05035d8ae1ff9aaa1418611f45ed9dfb507a188919964960f57ce2e85157
+- slot: 130
+  case: length
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the box with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0130.json
+  fingerprint: 1b22a97afd50ba2786e5f7345f5d539e5a320bd684ffc16f536a159d4d8f58a9
+- slot: 131
+  case: length
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the box with local length 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0131.json
+  fingerprint: b9ee31075bb44c763153188fbd3e5d7f4aa02b8b88ffbefc739fc1fd10aeb4e5
+- slot: 132
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0132.json
+  fingerprint: 8f9ac102fe2a68750faf418dc8a6ea45a69ee8f6a17b3ab148beb45279b9c352
+- slot: 133
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0133.json
+  fingerprint: 7ba5ede636fa267fd8bd618efef06e4f82b9237eeac32f8fc87752e40719ca51
+- slot: 134
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 6 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0134.json
+  fingerprint: b8c11906299745f4fef005d0f5aa4ea8cd02724a10e9fbe7f384a1ed4e962edb
+- slot: 135
+  case: length
+  condition: same_shape
+  level: L1
+  split: eval
+  prompt: Pick the box with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0135.json
+  fingerprint: 885ada7944460205666a4d6f5c9d2bb3fc2aadff26f0bd310c6a4b44f8b266b4
+- slot: 136
+  case: height
+  condition: cross_shape
+  level: L2
+  split: eval
+  prompt: Pick the object with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0136.json
+  fingerprint: 649ac4ed36740a5ce8f09d27380dfdd0861e0d10833a89bec893897acece1df3
+- slot: 137
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: eval
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0137.json
+  fingerprint: f7d84be2aec4a33a2d101d058bd0c2856da318a1fc95eee809fbbd01bca03868
+- slot: 138
+  case: height
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0138.json
+  fingerprint: 0dd17e3b9fb5065dab8f13b71d49558580e37e1a79b22c8cdda3df3e342d4096
+- slot: 139
+  case: length
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0139.json
+  fingerprint: 884bb735fcaa992c935c5be39621b6575dc84cc099c17f533557f7768fae9034
+- slot: 140
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the box with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0140.json
+  fingerprint: 10c292871936bab6c6131cca1413eb149ca573f1436167da1f4cebd8b3d4c47b
+- slot: 141
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0141.json
+  fingerprint: ae210aca0045f6f2778e6b4f8f3ebbe4185d1bcb4cd543b6ea643d0b6a2e8c69
+- slot: 142
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0142.json
+  fingerprint: e7ccdf1e603c80c345bec2b222495ed6d8cb053c0a7e699e2411352fc63769b8
+- slot: 143
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0143.json
+  fingerprint: 811a2ebdf835b2737d0187477ee0a52a4d355528925888c34f332032ce4eb27e
+- slot: 144
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0144.json
+  fingerprint: 394ede23cdb0034d612fa993cdfb45d055ef4493ab26a90e205123da7dda427d
+- slot: 145
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0145.json
+  fingerprint: 4d462d5a3df3033fd357b406c2fceb75aa9b1dad089e87973de62113b652ba30
+- slot: 146
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0146.json
+  fingerprint: e7f61221c40285af43d703b6803c29b2918e062cb7726fefb0f5d9d7e57b1f1b
+- slot: 147
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0147.json
+  fingerprint: 3e9c2436ed3579e45c3912f13961dd7e6053663bacc46f173e3cd0fca3631cc1
+- slot: 148
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the box with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0148.json
+  fingerprint: da975023613eb1f655dbf7a9006fc919ab65139536381b092584b2b59162af3f
+- slot: 149
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0149.json
+  fingerprint: 3ff0a0206548971ac70e2088d201de444bef9389232ed5a29ba6f604ebbe3166
+- slot: 150
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: eval
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0150.json
+  fingerprint: 3ca345f5a71c6079185c6d2262f2a62600bc45189a53ede2cef9b971e8b5169e
+- slot: 151
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: eval
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0151.json
+  fingerprint: 314b464fb373ac389ea14606c7fb3e8757c549e36fa2c1f18bc812a7fd734b9e
+- slot: 152
+  case: height
+  condition: same_shape
+  level: L3
+  split: eval
+  prompt: Pick the cylinder with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0152.json
+  fingerprint: 2bb83805cdd77892ef5e242ad87cc6d66422f02fffef3319dacc927b8542d326
+- slot: 153
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0153.json
+  fingerprint: d9dc7724e4cd1aedaccee3b731591f8ba138753c29b2a0be12734932608877c1
+- slot: 154
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0154.json
+  fingerprint: 5b31d290a15788619ff62154540c4a761ac1b2638c36f791cd91e3104d00bb18
+- slot: 155
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0155.json
+  fingerprint: 02a0efebc5b6d0433cb7acac726d3723ff50ab4b3f203200d29861b1be5020ed
+- slot: 156
+  case: height
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0156.json
+  fingerprint: aac54184439155b037b54f5f45f4b4985c97868e32577e1f4137af2dfb1e642c
+- slot: 157
+  case: length
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the box with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0157.json
+  fingerprint: 1ecd19d64a6f1634d80502766416134c2590e3554f3bc45ffb92c1c62147f194
+- slot: 158
+  case: length
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the box with local length 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0158.json
+  fingerprint: 48b0117b6c9a8421febb450ccb40d3ff5a904a501ff4eebeccbfc0c808a75097
+- slot: 159
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0159.json
+  fingerprint: 760d146eee090a2f40ea7509a0d0a6502f9589705dd63a740593a2723fd9fbc2
+- slot: 160
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all
+    other objects untouched.
+  scenario_file: scenarios/diameter/slot_0160.json
+  fingerprint: b0119440a81de370204305811b7194211b856a544b32ef0755b5ea2a91dbc00c
+- slot: 161
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 8 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0161.json
+  fingerprint: 8afc84535d58f878f50cb74c4d7be1c4a10b65b9c9472d9fa45e69aeb8871de7
+- slot: 162
+  case: length
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the box with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0162.json
+  fingerprint: f2cffc69a4c44e0c12c36676fe94640fd8a3d73a26893fa1c9addc90ed13105e
+- slot: 163
+  case: height
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0163.json
+  fingerprint: 5df82d41c70873fd769b9a8b9eba5704e127a6575dc21d2914965216e9a4a3a3
+- slot: 164
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0164.json
+  fingerprint: 0d1dc13b3e4ee23ad24f53caf163e10183e8d15e558ed5da7d1bae82dc9aca13
+- slot: 165
+  case: height
+  condition: same_shape
+  level: L1
+  split: eval
+  prompt: Pick the cylinder with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0165.json
+  fingerprint: 47673ef3ccaea4ffd16b86af62eee1e4e85be3841b7e617c251bdea3294c99a6
+- slot: 166
+  case: length
+  condition: cross_shape
+  level: L2
+  split: eval
+  prompt: Pick the object with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0166.json
+  fingerprint: 7a0614eae115b9b212f947c8c96995a884e8813157aae877b0d239e91adf5ffb
+- slot: 167
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: eval
+  prompt: Pick the box with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0167.json
+  fingerprint: 8898ada12e069b80bbf7cd077b73288ca21fc1778f94f58274f765896b98e822
+- slot: 168
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0168.json
+  fingerprint: 429a5d9a23229c4cb49016a7ba6743295173082bdd100df899a4b8d6475b3d1d
+- slot: 169
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0169.json
+  fingerprint: fb6c4dd7bf2c4067f21393095e8bcada87e5773107e536b46887668dda57f88d
+- slot: 170
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0170.json
+  fingerprint: c24f4370f96fd71d5f5b1cb21509fb1fba937c435feae4455f68882ad5ca2383
+- slot: 171
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0171.json
+  fingerprint: ad3ba44be1b16a8e47d40e861b3b2143315069eee2e8ee95dd2d20770c24b839
+- slot: 172
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0172.json
+  fingerprint: 0bd272ea696cd987a495a9c5bb9ac07c13173951d57b28d7d8868ca3b2598a0c
+- slot: 173
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0173.json
+  fingerprint: 6d30f76ceeea694a05cebf9e3ce1daa2117bd5303c8eba0312b3190d66606859
+- slot: 174
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0174.json
+  fingerprint: c7169e20119319e3df0aa9d819c785ac5a0dce237c4ce9447da5dfa474ea37b5
+- slot: 175
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the box with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0175.json
+  fingerprint: 68e24472971b7167a79e36db977d65575f95274e8abfd347f45af1d237e83a64
+- slot: 176
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0176.json
+  fingerprint: 71c9eeac73d6dac89eba45d572d8b36e217f1c4166ac9027ce48e1e6375c25b9
+- slot: 177
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0177.json
+  fingerprint: 007ccb44f82abce0724618eef1c4ab74ce604dafc2503aaf67a4c69c3a8f2205
+- slot: 178
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0178.json
+  fingerprint: fd0b8925be61965fce54cb366f3493f9866dca36faa12446e67681326d04e4aa
+- slot: 179
+  case: height
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0179.json
+  fingerprint: e3d61615e84342b5282cae62c4f4ef4582ad38a3ad84e5a177c23af301ba8e90
+- slot: 180
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: eval
+  prompt: Pick the box with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0180.json
+  fingerprint: cf293bcb19a93b8d80abd2426d03590dce416560704b2a583bde13d498e17d4d
+- slot: 181
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: eval
+  prompt: Pick the cylinder with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0181.json
+  fingerprint: e4d4d053fa0b9cc9318f5c2fa566dbca5ec53f81459d4a290ecf47e9e10bc55f
+- slot: 182
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: eval
+  prompt: Pick the object with local diameter 45 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0182.json
+  fingerprint: 20db3eddeaff248df0c46883c02ff8303ee38e75ef4efbb5c5b0684f6c84ff74
+- slot: 183
+  case: height
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0183.json
+  fingerprint: 6a15e0dfa4be0c465b385d1d974e3624c74a9f03079591073a68284fd71ee53b
+- slot: 184
+  case: length
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the box with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0184.json
+  fingerprint: 191332e3c4a4ea293d670a579f7139ba534d6eba96a9fe37379ea909233b7e60
+- slot: 185
+  case: length
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the box with local length 14 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0185.json
+  fingerprint: f6df04838293b026a0339c6cbb7bb7a73e044501f59111d3da4aa977f9fd48cf
+- slot: 186
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0186.json
+  fingerprint: 716af12ef962a47ff2b8e5c5bea6a339f8a00cb3200f754c19a7d6e147e7e81e
+- slot: 187
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 45 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0187.json
+  fingerprint: e4b77a1836ff4e98743999ef4668d50edece58a76a48130f811d2f37c4d28397
+- slot: 188
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 10 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0188.json
+  fingerprint: 0dd93ffcb1e2bb9620f29ac93c88fcde7962df9d3dfc4cb96c6731c721fad5cf
+- slot: 189
+  case: length
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the box with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0189.json
+  fingerprint: 9b73e3b88ce91f621d6debd8903cf9280ebffa18c4e08d52c8561413e8ed444c
+- slot: 190
+  case: height
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0190.json
+  fingerprint: 9eabdb24cd505f06f979b76053abeda31ef76ca1921623e1aef195275480b2b3
+- slot: 191
+  case: diameter
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0191.json
+  fingerprint: 0b5f33450f863ed2852376ff0c3793342ce905c9908a8845d40664c677edad97
+- slot: 192
+  case: height
+  condition: same_shape
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0192.json
+  fingerprint: 41256fde502cb10011eaef77bf40374c25467542da493947a7497fd7418800df
+- slot: 193
+  case: length
+  condition: cross_shape
+  level: L2
+  split: train
+  prompt: Pick the object with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0193.json
+  fingerprint: 32278c5e15d2742877db0a881e9ebdb9a2b354ae7cb50cc08ef937403487b345
+- slot: 194
+  case: length
+  condition: shape_conditioned
+  level: L3
+  split: train
+  prompt: Pick the box with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0194.json
+  fingerprint: 135f5d04c31ac7d97c05e71468712aa06dc29e8d0d6a7a683b3b390cc657f678
+- slot: 195
+  case: diameter
+  condition: same_shape
+  level: L1
+  split: eval
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0195.json
+  fingerprint: ea7abc9120eb8e3811d1be831620edf9c64c6175156a7b861b6a0b59e21487f6
+- slot: 196
+  case: diameter
+  condition: cross_shape
+  level: L2
+  split: eval
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0196.json
+  fingerprint: 307cf650327d8e7815cba3bdf262becddd15dba812ce69b88eac02af4c071537
+- slot: 197
+  case: height
+  condition: shape_conditioned
+  level: L3
+  split: eval
+  prompt: Pick the cylinder with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0197.json
+  fingerprint: 4f4d2d6601a1090ea7c78fd56c303bf20cbfa5ef20749a1d74b8c6830d8411fc
+- slot: 198
+  case: length
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0198.json
+  fingerprint: ad84dd12dc8f7a821f40fac6c04011f9bc3bd839157bf696b1aa60c78a91200c
+- slot: 199
+  case: height
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0199.json
+  fingerprint: 64112c54fccce10eb349cceb3da9cc872947a08653b14e6c012f27fd904529b4
+- slot: 200
+  case: diameter
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0200.json
+  fingerprint: 1dff387d4b6b28f5ff7d54b02b91f8ce234ad46918a44f2b55ae8901ecbc73fc
+- slot: 201
+  case: height
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the cylinder with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0201.json
+  fingerprint: b4bd427ee4a3f6ef46b54a5fbc67fc214294b84c948341060ad23fb62eb3bbd3
+- slot: 202
+  case: length
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the box with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0202.json
+  fingerprint: 1d82c0e2808b53bdcbac1110b865682c900b688895e1fa65994db706c8e3be70
+- slot: 203
+  case: length
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0203.json
+  fingerprint: b3a927e9b48b269b510e418a8c7528f9b81608241e53d4924e583e0cd95ef2eb
+- slot: 204
+  case: diameter
+  condition: cross_shape
+  level: L1
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0204.json
+  fingerprint: e7d8f8d3b77c7e23b81468cc892320add17c9e0e9bd82f97fd558ed2c0ac8a29
+- slot: 205
+  case: diameter
+  condition: same_shape
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0205.json
+  fingerprint: b2b9d697939aff0ef1e6efdd5d16f68e201747e81d9ec60066aeaf6707f7ecd1
+- slot: 206
+  case: height
+  condition: same_shape
+  level: L3
+  split: train
+  prompt: Pick the cylinder with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0206.json
+  fingerprint: 3cae746d0e652c43ebb4a79b1ffea1963772ec4e054680b83c48b9db30c8ca3b
+- slot: 207
+  case: length
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the box with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0207.json
+  fingerprint: e010ba95e03b2cdbf949b282970890054a8844733d9c266935b54e20bfd55917
+- slot: 208
+  case: height
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the cylinder with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0208.json
+  fingerprint: 831fd9efb80d433bcb4670a4258ac69fcf4f483e20221e325abc860a98b24795
+- slot: 209
+  case: diameter
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local diameter 50 mm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/diameter/slot_0209.json
+  fingerprint: 4df92cec0469264cbcd7f92e4d4b7e2c2fcef6c8eba7b07cb1173eca2383ad0e
+- slot: 210
+  case: height
+  condition: cross_shape
+  level: L1
+  split: eval
+  prompt: Pick the object with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0210.json
+  fingerprint: 92c4ea852b44cd43fbd69873c3d1230a5636116e460763739d99428e40dbca37
+- slot: 211
+  case: length
+  condition: same_shape
+  level: L2
+  split: eval
+  prompt: Pick the box with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0211.json
+  fingerprint: 76ab577e2e79ad0e6b7fd3f941b4435e751b23d6e3f2536e99b069023e9db138
+- slot: 212
+  case: length
+  condition: same_shape
+  level: L3
+  split: eval
+  prompt: Pick the box with local length 16 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/length/slot_0212.json
+  fingerprint: 973f92e61d93996b0f3c61f0e3a1164998d502303dd5021c3c2fc848e1ff59d8
+- slot: 213
+  case: diameter
+  condition: shape_conditioned
+  level: L1
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0213.json
+  fingerprint: 68d5f5a3f9d060d6fe5b056439c1c0798d5a38e679b582d4c987764752c04867
+- slot: 214
+  case: diameter
+  condition: shape_conditioned
+  level: L2
+  split: train
+  prompt: Pick the circular disk with local diameter 50 mm. Lift and hold it; leave
+    all other objects untouched.
+  scenario_file: scenarios/diameter/slot_0214.json
+  fingerprint: ddbd6e1638699f9b87a50e9c971ad48bf4381b481a60c39c495524b668673a2c
+- slot: 215
+  case: height
+  condition: cross_shape
+  level: L3
+  split: train
+  prompt: Pick the object with local height 12 cm. Lift and hold it; leave all other
+    objects untouched.
+  scenario_file: scenarios/height/slot_0215.json
+  fingerprint: 6e501118b9ac5348bf7bf3b877043f4053a0d99bac0fd26300bc2761ef3c720f

@@ -1,0 +1,32 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+name: mou_attributes_v1
+description: Metric identification with one instruction and a controlled pick/lift/hold
+  demonstration.
+count: 756
+seed: 712
+conditions:
+- same_shape
+- cross_shape
+- shape_conditioned
+levels:
+- L1
+- L2
+- L3
+deferred:
+- capacity
+- multi_dimension
+- component_dimension
+- nested_dimension
+maximum_grasp_width_m: 0.065
+attribute_files:
+- mou/attributes/length.yaml
+- mou/attributes/width.yaml
+- mou/attributes/height.yaml
+- mou/attributes/radius.yaml
+- mou/attributes/diameter.yaml
+- mou/attributes/area.yaml
+- mou/attributes/volume.yaml

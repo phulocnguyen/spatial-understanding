@@ -1,0 +1,19 @@
+slot,case,condition,level,split,prompt,scenario_file
+0,length,same_shape,L1,eval,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0000.json
+1,height,same_shape,L2,eval,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0001.json
+2,diameter,same_shape,L3,eval,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0002.json
+3,height,same_shape,L1,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0003.json
+4,length,same_shape,L2,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0004.json
+5,length,same_shape,L3,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0005.json
+6,diameter,same_shape,L1,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0006.json
+7,diameter,same_shape,L2,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0007.json
+8,height,same_shape,L3,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0008.json
+9,length,same_shape,L1,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0009.json
+10,height,same_shape,L2,train,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0010.json
+11,diameter,same_shape,L3,train,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0011.json
+12,height,same_shape,L1,train,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0012.json
+13,length,same_shape,L2,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0013.json
+14,length,same_shape,L3,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0014.json
+15,diameter,same_shape,L1,eval,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0015.json
+16,diameter,same_shape,L2,eval,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0016.json
+17,height,same_shape,L3,eval,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0017.json

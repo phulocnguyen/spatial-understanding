@@ -1,0 +1,74 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+name: mou_diverse_v1
+description: Metric identification with one instruction and a controlled pick/lift/hold
+  demonstration.
+count: 216
+seed: 712
+conditions:
+- same_shape
+- cross_shape
+- shape_conditioned
+levels:
+- L1
+- L2
+- L3
+cases:
+  length:
+    shapes:
+    - rectangular_bar
+    - box
+    queries:
+    - length:
+        value: 10
+        unit: cm
+    - length:
+        value: 12
+        unit: cm
+    - length:
+        value: 14
+        unit: cm
+    - length:
+        value: 16
+        unit: cm
+  height:
+    shapes:
+    - box
+    - cylinder
+    queries:
+    - height:
+        value: 6
+        unit: cm
+    - height:
+        value: 8
+        unit: cm
+    - height:
+        value: 10
+        unit: cm
+    - height:
+        value: 12
+        unit: cm
+  diameter:
+    shapes:
+    - cylinder
+    - circular_disk
+    queries:
+    - diameter:
+        value: 45
+        unit: mm
+    - diameter:
+        value: 50
+        unit: mm
+deferred:
+- width
+- radius
+- area
+- volume
+- capacity
+- multi_dimension
+- component_dimension
+- nested_dimension
+maximum_grasp_width_m: 0.065

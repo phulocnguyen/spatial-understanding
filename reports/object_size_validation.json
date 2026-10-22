@@ -1,0 +1,1153 @@
+{
+  "status": "passed_with_autonomous_exclusions",
+  "autonomous_exclusions": {
+    "cone": "Parallel-jaw overhead grasp slips under permitted mass randomization; generation and new collection are blocked."
+  },
+  "active_test_cases": 16,
+  "excluded_shape_results": [
+    {
+      "case": "height_cone",
+      "returncode": 0,
+      "wall_seconds": 46.0,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_deeper/height_cone/20261020T051147017056Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 62
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_deeper/height_cone/20261020T051147017056Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_deeper/height_cone/20261020T051147017056Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_deeper/height_cone/20261020T051147017056Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_deeper/height_cone/20261020T051147017056Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.06,
+      "maximum_extent_m": 0.14066510228291343,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            36.3221508828023,
+            86.8572596663327
+          ],
+          "max_px": [
+            223.9278424944558,
+            182.11832915538693
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            64.23434448620479,
+            39.488355973759234
+          ],
+          "max_px": [
+            172.4186312351926,
+            200.17046972629498
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            57.42731358385547,
+            42.192650427060705
+          ],
+          "max_px": [
+            228.20625873662584,
+            193.5202848879464
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "volume_cone",
+      "returncode": 0,
+      "wall_seconds": 105.6,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_wider/volume_cone/20261020T051442399458Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 0,
+        "transitions": 240
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_wider/volume_cone/20261020T051442399458Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_wider/volume_cone/20261020T051442399458Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_wider/volume_cone/20261020T051442399458Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_wider/volume_cone/20261020T051442399458Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.03340416745982591,
+      "maximum_extent_m": 0.1389318726184388,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            32.578869224764404,
+            100.25266105131716
+          ],
+          "max_px": [
+            225.42398107591583,
+            183.58949509728475
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            61.45361931130213,
+            39.44229146399495
+          ],
+          "max_px": [
+            174.46987810294385,
+            207.2386744061072
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            56.034588785373984,
+            59.68180362910255
+          ],
+          "max_px": [
+            233.50750776505575,
+            198.60856786244912
+          ],
+          "within_frame": true
+        }
+      }
+    }
+  ],
+  "manifest_generation_checks": {
+    "slots": 300,
+    "seeds": [
+      712,
+      713,
+      714
+    ]
+  },
+  "physical_cases": 18,
+  "size_policy": {
+    "limits": {
+      "minimum_extent_m": 0.025,
+      "minimum_planar_span_m": 0.045,
+      "maximum_extent_m": 0.22,
+      "maximum_grasp_width_m": 0.074,
+      "minimum_component_extent_m": 0.025
+    },
+    "linear_gap_scale": {
+      "radius": 0.5
+    },
+    "box_defaults": {
+      "rectangular_bar": [
+        0.14,
+        0.04,
+        0.035
+      ],
+      "rectangular_plate": [
+        0.1,
+        0.06,
+        0.03
+      ],
+      "box": [
+        0.1,
+        0.055,
+        0.08
+      ]
+    },
+    "round_defaults": {
+      "radius_m": 0.03,
+      "height_m": 0.1,
+      "disk_height_m": 0.03,
+      "puck_height_m": 0.035,
+      "volume_cone_radius_m": 0.036
+    },
+    "component": {
+      "overall_length_m": 0.2,
+      "handle_width_m": 0.03,
+      "handle_height_m": 0.03,
+      "tool_head_width_m": 0.065,
+      "tool_head_height_m": 0.05,
+      "paddle_head_width_m": 0.085,
+      "paddle_head_height_m": 0.03
+    }
+  },
+  "offline_report": "object_size_preflight.json",
+  "unit_tests_passed": 21,
+  "manifest": "Benchmark/manifests/mou/larger30/plan.yaml",
+  "latest_results": [
+    {
+      "case": "area",
+      "returncode": 0,
+      "wall_seconds": 44.1,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/area/20261020T050233178544Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 59
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/area/20261020T050233178544Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/area/20261020T050233178544Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/area/20261020T050233178544Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/area/20261020T050233178544Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.03,
+      "maximum_extent_m": 0.07332970268836599,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            36.73512234076605,
+            108.45705573231476
+          ],
+          "max_px": [
+            220.56978634945767,
+            184.32918353141503
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            64.36791142522218,
+            64.2778822634647
+          ],
+          "max_px": [
+            171.64331107593145,
+            201.27906375215554
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            60.886963392798776,
+            62.55044682565113
+          ],
+          "max_px": [
+            225.66837395255496,
+            196.6690151056818
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "volume",
+      "returncode": 0,
+      "wall_seconds": 43.2,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/volume/20261020T050317151285Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/volume/20261020T050317151285Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/volume/20261020T050317151285Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/volume/20261020T050317151285Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/volume/20261020T050317151285Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.042,
+      "maximum_extent_m": 0.09,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            33.051192915041824,
+            101.52340779605271
+          ],
+          "max_px": [
+            221.41592175618203,
+            185.11440105135733
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            62.554898014349675,
+            56.620977703666696
+          ],
+          "max_px": [
+            171.6792188470716,
+            200.55587221607098
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            60.14160496495224,
+            55.581146787234026
+          ],
+          "max_px": [
+            229.24597319193305,
+            199.29810906029417
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "height",
+      "returncode": 0,
+      "wall_seconds": 46.0,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/height/20261020T050400281907Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 61
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/height/20261020T050400281907Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/height/20261020T050400281907Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/height/20261020T050400281907Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/height/20261020T050400281907Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.055,
+      "maximum_extent_m": 0.14066510228291343,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            25.975476511276227,
+            86.8572596663327
+          ],
+          "max_px": [
+            223.9278424944558,
+            186.60375928559253
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            57.674560177428916,
+            39.488355973759234
+          ],
+          "max_px": [
+            172.4186312351926,
+            200.17046972629498
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            57.42731358385547,
+            42.192650427060705
+          ],
+          "max_px": [
+            239.68608485552735,
+            201.46276952172562
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "radius",
+      "returncode": 0,
+      "wall_seconds": 42.5,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/radius/20261020T050446530968Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 55
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/radius/20261020T050446530968Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/radius/20261020T050446530968Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/radius/20261020T050446530968Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/radius/20261020T050446530968Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.047136831431936206,
+      "maximum_extent_m": 0.1,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            28.107801751377014,
+            102.69385155145665
+          ],
+          "max_px": [
+            202.96371267456044,
+            166.55770620488326
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            69.32520923931911,
+            51.83894908671357
+          ],
+          "max_px": [
+            171.27686713108375,
+            172.83857540339827
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            95.02977526715351,
+            58.135040343914774
+          ],
+          "max_px": [
+            187.88533786689177,
+            214.46736050186547
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "component_dimension",
+      "returncode": 0,
+      "wall_seconds": 141.0,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension/20261020T050528615258Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 59
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension/20261020T050528615258Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension/20261020T050528615258Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension/20261020T050528615258Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension/20261020T050528615258Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.03,
+      "maximum_extent_m": 0.2,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            16.348773699835107,
+            106.79950907744538
+          ],
+          "max_px": [
+            244.1356812611848,
+            187.86862392224782
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            54.240953019611375,
+            54.11210347068627
+          ],
+          "max_px": [
+            182.74099908727146,
+            247.05030629151796
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            65.54230917413042,
+            44.51736547800599
+          ],
+          "max_px": [
+            223.44499035370146,
+            227.14861647224944
+          ],
+          "within_frame": true
+        }
+      },
+      "preview": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension/20261020T050528615258Z/initial_views.png"
+    },
+    {
+      "case": "nested_dimension",
+      "returncode": 0,
+      "wall_seconds": 44.3,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/nested_dimension/20261020T050750096883Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 54
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/nested_dimension/20261020T050750096883Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/nested_dimension/20261020T050750096883Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/nested_dimension/20261020T050750096883Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/nested_dimension/20261020T050750096883Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.04,
+      "maximum_extent_m": 0.11,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            30.11683336603808,
+            88.23710243049538
+          ],
+          "max_px": [
+            225.5701440689822,
+            175.93442220078532
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            46.138453796119514,
+            56.542238124598555
+          ],
+          "max_px": [
+            211.1655415598519,
+            207.0683359646389
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            53.96002912249877,
+            42.25673382200846
+          ],
+          "max_px": [
+            190.56455214182822,
+            212.25574063209174
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "height_box",
+      "returncode": 0,
+      "wall_seconds": 45.5,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/height_box/20261020T045748673073Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 61
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/height_box/20261020T045748673073Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/height_box/20261020T045748673073Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/height_box/20261020T045748673073Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/height_box/20261020T045748673073Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.055,
+      "maximum_extent_m": 0.14066510228291343,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            36.3221508828023,
+            83.90388817123393
+          ],
+          "max_px": [
+            231.78870127446868,
+            182.11832915538693
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            64.94826768037326,
+            53.73279729630238
+          ],
+          "max_px": [
+            179.40806306596716,
+            226.0496700314279
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            43.90618502615031,
+            56.33993381954496
+          ],
+          "max_px": [
+            228.89505024760268,
+            218.70004382014946
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "volume_sphere",
+      "returncode": 0,
+      "wall_seconds": 41.8,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/volume_sphere/20261020T045834175638Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 55
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/volume_sphere/20261020T045834175638Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/volume_sphere/20261020T045834175638Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/volume_sphere/20261020T045834175638Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/volume_sphere/20261020T045834175638Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.03340416745982591,
+      "maximum_extent_m": 0.095,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            36.69671680824811,
+            104.88224881621777
+          ],
+          "max_px": [
+            225.42398107591583,
+            183.4533453422597
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            64.14550413551707,
+            55.609313675553345
+          ],
+          "max_px": [
+            174.46987810294385,
+            207.2386744061072
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            56.034588785373984,
+            59.68180362910255
+          ],
+          "max_px": [
+            227.03283394280808,
+            198.60856786244912
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "capacity_rectangular_container",
+      "returncode": 0,
+      "wall_seconds": 45.3,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/capacity_rectangular_container/20261020T045916201124Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 58
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/capacity_rectangular_container/20261020T045916201124Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/capacity_rectangular_container/20261020T045916201124Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/capacity_rectangular_container/20261020T045916201124Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/capacity_rectangular_container/20261020T045916201124Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.072,
+      "maximum_extent_m": 0.14,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            32.73352395845501,
+            83.69011012352318
+          ],
+          "max_px": [
+            231.37047823997602,
+            183.46807462369065
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            61.58379188655817,
+            36.58742286720721
+          ],
+          "max_px": [
+            180.8999812697482,
+            205.81403187106704
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            43.04097935378002,
+            35.416895771530314
+          ],
+          "max_px": [
+            233.31723856898,
+            202.26729196606897
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "capacity",
+      "returncode": 0,
+      "wall_seconds": 49.1,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/capacity/20261020T050232884230Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 62
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/capacity/20261020T050232884230Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/capacity/20261020T050232884230Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/capacity/20261020T050232884230Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/capacity/20261020T050232884230Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.072,
+      "maximum_extent_m": 0.14,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            24.88556536060512,
+            86.26610908168053
+          ],
+          "max_px": [
+            227.06567514752814,
+            188.34976341847067
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            54.830090785186236,
+            37.18110737624591
+          ],
+          "max_px": [
+            174.23402573579932,
+            202.1430108371242
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            54.38413813256085,
+            36.62916187487676
+          ],
+          "max_px": [
+            244.8795497664673,
+            200.51394038370483
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "diameter",
+      "returncode": 0,
+      "wall_seconds": 44.2,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/diameter/20261020T050322272011Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 57
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/diameter/20261020T050322272011Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/diameter/20261020T050322272011Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/diameter/20261020T050322272011Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/diameter/20261020T050322272011Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.047136831431936206,
+      "maximum_extent_m": 0.1,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            25.722405746799975,
+            105.61959875707507
+          ],
+          "max_px": [
+            201.63435771801164,
+            166.55771123386873
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            70.80322096673164,
+            42.252299780661886
+          ],
+          "max_px": [
+            170.2032188731343,
+            172.8385813381431
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            94.90455844815052,
+            65.63214714740542
+          ],
+          "max_px": [
+            190.27576497243695,
+            214.46735396347208
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "length",
+      "returncode": 0,
+      "wall_seconds": 45.5,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/length/20261020T050406185602Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 60
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/length/20261020T050406185602Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/length/20261020T050406185602Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/length/20261020T050406185602Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/length/20261020T050406185602Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.035,
+      "maximum_extent_m": 0.16066510228291345,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            22.14249201182981,
+            103.28130849524152
+          ],
+          "max_px": [
+            231.70242004402186,
+            189.06796296512172
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            55.651918340067,
+            49.2305166426696
+          ],
+          "max_px": [
+            181.61702259575875,
+            214.7759372326976
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            44.388462378523734,
+            56.81598353553775
+          ],
+          "max_px": [
+            242.11650872892278,
+            207.2517879327706
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "width",
+      "returncode": 0,
+      "wall_seconds": 42.0,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/width/20261020T050451805710Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/width/20261020T050451805710Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/width/20261020T050451805710Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/width/20261020T050451805710Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/width/20261020T050451805710Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.03,
+      "maximum_extent_m": 0.1,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            33.36838308478829,
+            96.17132383167038
+          ],
+          "max_px": [
+            228.42181720849655,
+            184.9661687717936
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            63.25507727012969,
+            50.94845646882013
+          ],
+          "max_px": [
+            178.75787990278457,
+            207.98269559402814
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            48.1454393340067,
+            48.966510502226924
+          ],
+          "max_px": [
+            227.73393018384118,
+            202.1948404270491
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "multi_dimension",
+      "returncode": 0,
+      "wall_seconds": 43.2,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/multi_dimension/20261020T050533741601Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 57
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/multi_dimension/20261020T050533741601Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/multi_dimension/20261020T050533741601Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/multi_dimension/20261020T050533741601Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/multi_dimension/20261020T050533741601Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.028273662863872426,
+      "maximum_extent_m": 0.16066510228291345,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            52.34897320723508,
+            105.31385411146017
+          ],
+          "max_px": [
+            230.88022471599703,
+            186.73943966123403
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            57.51152482099301,
+            64.46917301210023
+          ],
+          "max_px": [
+            175.92854285605273,
+            221.12460850607644
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            53.27570760672862,
+            53.73841820808947
+          ],
+          "max_px": [
+            215.26904228322545,
+            195.02777953885624
+          ],
+          "within_frame": true
+        }
+      }
+    },
+    {
+      "case": "component_dimension_handled_paddle",
+      "returncode": 0,
+      "wall_seconds": 44.9,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension_handled_paddle/20261020T050616833197Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 59
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension_handled_paddle/20261020T050616833197Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension_handled_paddle/20261020T050616833197Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension_handled_paddle/20261020T050616833197Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension_handled_paddle/20261020T050616833197Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.03,
+      "maximum_extent_m": 0.2,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            59.33458701550024,
+            97.48729157165837
+          ],
+          "max_px": [
+            253.69129425614253,
+            190.59886245605009
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            36.829705356907176,
+            65.44145306056296
+          ],
+          "max_px": [
+            214.3440632729488,
+            230.9346429666426
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            51.139981995518475,
+            53.03026232760731
+          ],
+          "max_px": [
+            224.03355362776838,
+            193.6764402674956
+          ],
+          "within_frame": true
+        }
+      },
+      "preview": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_final/component_dimension_handled_paddle/20261020T050616833197Z/initial_views.png"
+    },
+    {
+      "case": "nested_dimension_rectangular_tray",
+      "returncode": 0,
+      "wall_seconds": 45.4,
+      "success": true,
+      "finalized": true,
+      "reason": "success",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/nested_dimension_rectangular_tray/20261020T050146050807Z/episode_0000/metadata.json",
+      "validation": {
+        "episodes": 1,
+        "successes": 1,
+        "transitions": 56
+      },
+      "videos": [
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/nested_dimension_rectangular_tray/20261020T050146050807Z/videos/episode_0000_left.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/nested_dimension_rectangular_tray/20261020T050146050807Z/videos/episode_0000_right.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/nested_dimension_rectangular_tray/20261020T050146050807Z/videos/episode_0000_top.mp4",
+        "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/nested_dimension_rectangular_tray/20261020T050146050807Z/videos/episode_0000_wrist.mp4"
+      ],
+      "minimum_extent_m": 0.04,
+      "maximum_extent_m": 0.11,
+      "initial_projected_bounds": {
+        "top": {
+          "min_px": [
+            26.169879796371646,
+            102.11400289610273
+          ],
+          "max_px": [
+            221.61255013656208,
+            175.9344275879849
+          ],
+          "within_frame": true
+        },
+        "left": {
+          "min_px": [
+            50.94263502896388,
+            40.592685875877955
+          ],
+          "max_px": [
+            206.04491020448063,
+            207.06834219960274
+          ],
+          "within_frame": true
+        },
+        "right": {
+          "min_px": [
+            57.6588776139175,
+            58.28945212631
+          ],
+          "max_px": [
+            194.73765340478315,
+            212.25573442075958
+          ],
+          "within_frame": true
+        }
+      }
+    }
+  ],
+  "historical_failures": [
+    {
+      "case": "height_cone",
+      "returncode": 0,
+      "wall_seconds": 116.9,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/height_cone/20261020T045752798202Z/episode_0000/metadata.json"
+    },
+    {
+      "case": "volume_cone",
+      "returncode": 0,
+      "wall_seconds": 116.3,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes/volume_cone/20261020T045949527021Z/episode_0000/metadata.json"
+    },
+    {
+      "case": "height_cone",
+      "returncode": 0,
+      "wall_seconds": 113.3,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_retest/height_cone/20261020T050841767107Z/episode_0000/metadata.json"
+    },
+    {
+      "case": "volume_cone",
+      "returncode": 0,
+      "wall_seconds": 111.3,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_retest/volume_cone/20261020T050842099279Z/episode_0000/metadata.json"
+    },
+    {
+      "case": "volume_cone",
+      "returncode": 0,
+      "wall_seconds": 110.3,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_deeper/volume_cone/20261020T051147003500Z/episode_0000/metadata.json"
+    },
+    {
+      "case": "volume_cone",
+      "returncode": 0,
+      "wall_seconds": 105.6,
+      "success": false,
+      "finalized": true,
+      "reason": "timeout",
+      "metadata": "/home/locnp/IsaacLab/Benchmark/datasets/diagnostic/object_sizes_cone_wider/volume_cone/20261020T051442399458Z/episode_0000/metadata.json"
+    }
+  ],
+  "scope": "One seed per preset and selected alternate shapes. Component preset uses production 64-sample rendering; other diagnostics use 8 samples. All use 256x256 RGB-D and four videos. Projected primitive AABBs and exact compound vertices check framing, not occlusion or metric observability. These episodes remain diagnostic and observability-unverified."
+}

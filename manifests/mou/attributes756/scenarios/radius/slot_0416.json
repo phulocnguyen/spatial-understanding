@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "benchmark": "Benchmark",
+  "category": "metric_spatial_understanding",
+  "task": "metric_object_understanding",
+  "case": "radius",
+  "case_id": "MOU-1.4",
+  "family": "physical_dimensions",
+  "condition": "cross_shape",
+  "level": "L3",
+  "seed": 42728,
+  "split": "train",
+  "query": {
+    "radius": {
+      "value": 21,
+      "unit": "mm",
+      "value_si": 0.021
+    }
+  },
+  "requested_shape": null,
+  "reference_shape": "puck",
+  "objects": [
+    {
+      "category": "cylinder",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.01843557451656529,
+        "height_m": 0.1,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.03687114903313058,
+        "width": 0.03687114903313058,
+        "height": 0.1,
+        "radius": 0.01843557451656529,
+        "diameter": 0.03687114903313058,
+        "footprint_area": 0.0010677343761782878,
+        "volume": 0.00010677343761782879,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_0",
+      "distractor_role": "incorrect_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": false,
+      "measurement_match": false
+    },
+    {
+      "category": "puck",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.021,
+        "height_m": 0.035,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.042,
+        "width": 0.042,
+        "height": 0.035,
+        "radius": 0.021,
+        "diameter": 0.042,
+        "footprint_area": 0.001385442360233099,
+        "volume": 4.8490482608158465e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_1",
+      "distractor_role": "correct_shape_correct_measurement",
+      "target_match": true,
+      "shape_match": true,
+      "measurement_match": true
+    },
+    {
+      "category": "puck",
+      "geometry": {
+        "kind": "cylinder",
+        "radius_m": 0.018383036391504542,
+        "height_m": 0.035,
+        "axis": "Z"
+      },
+      "physical_properties_si": {
+        "length": 0.036766072783009085,
+        "width": 0.036766072783009085,
+        "height": 0.035,
+        "radius": 0.018383036391504542,
+        "diameter": 0.036766072783009085,
+        "footprint_area": 0.0010616573397166107,
+        "volume": 3.715800689008138e-05,
+        "capacity": null,
+        "inner_width": null,
+        "outer_width": null,
+        "handle_length": null
+      },
+      "internal_geometry": null,
+      "components": [],
+      "object_id": "object_2",
+      "distractor_role": "correct_shape_incorrect_measurement",
+      "target_match": false,
+      "shape_match": true,
+      "measurement_match": false
+    }
+  ],
+  "target_index": 1,
+  "target_id": "object_1",
+  "distractor_ids": [
+    "object_0",
+    "object_2"
+  ],
+  "difficulty": {
+    "minimum_linear_gap_m": 0.01,
+    "objects": 3,
+    "appearance": "similar",
+    "relative_derived_gap": 0.2,
+    "linear_gap_scale": {
+      "radius": 0.25,
+      "diameter": 0.5,
+      "width": 0.5
+    },
+    "effective_objects": 3
+  },
+  "separation": [
+    {
+      "attribute": "radius",
+      "minimum_si": 0.0025,
+      "actual_si": 0.002564425483434711,
+      "dimension": 1
+    },
+    {
+      "attribute": "radius",
+      "minimum_si": 0.0025,
+      "actual_si": 0.002616963608495459,
+      "dimension": 1
+    }
+  ],
+  "observability_status": "unverified",
+  "observability_reason": "Requires calibrated rendered-view review; local axes and cavities may be ambiguous/occluded",
+  "manipulation_protocol": "oracle_pick_lift_hold_proxy",
+  "geometry_qualification": "analytic_and_procedural; physics validation pending",
+  "control_group_id": "9b61d9b65e8fee57d0f0946a920b7d005ee0a47c84017d59c817a8afbeb76171",
+  "constraint_necessity": {
+    "radius": true
+  },
+  "target_measurement_ranks": {
+    "radius": 2
+  },
+  "rank_balance_status": "Requires manifest-level distribution review; feasibility can limit rank counterbalancing",
+  "instruction": "Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.",
+  "fingerprint": "1959a94bc82c9003a35307795f902e8f27b31f6fecb68205150a032d24f9834f",
+  "scenario_id": "MOU_radius_cross_shape_L3_42728_1959a94bc8"
+}

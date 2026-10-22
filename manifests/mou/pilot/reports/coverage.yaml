@@ -1,0 +1,22 @@
+slots: 18
+target_rank_counts:
+  length:length:rank_0: 2
+  height:height:rank_0: 2
+  diameter:diameter:rank_0: 2
+  height:height:rank_1: 2
+  length:length:rank_1: 2
+  length:length:rank_2: 2
+  diameter:diameter:rank_1: 2
+  diameter:diameter:rank_2: 2
+  height:height:rank_2: 2
+by_case:
+  length: 6
+  height: 6
+  diameter: 6
+by_condition:
+  same_shape: 18
+by_level:
+  L1: 6
+  L2: 6
+  L3: 6
+infeasible_cells: 0

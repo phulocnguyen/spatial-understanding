@@ -1,0 +1,757 @@
+slot,case,condition,level,split,prompt,scenario_file
+0,length,same_shape,L1,eval,Pick the rectangular bar with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0000.json
+1,width,cross_shape,L2,eval,Pick the object with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0001.json
+2,height,shape_conditioned,L3,eval,Pick the box with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0002.json
+3,radius,same_shape,L1,train,Pick the cylinder with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0003.json
+4,diameter,cross_shape,L2,train,Pick the object with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0004.json
+5,area,shape_conditioned,L3,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0005.json
+6,volume,same_shape,L1,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0006.json
+7,length,cross_shape,L2,train,Pick the object with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0007.json
+8,width,shape_conditioned,L3,train,Pick the rectangular plate with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0008.json
+9,height,same_shape,L1,train,Pick the box with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0009.json
+10,radius,cross_shape,L2,train,Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0010.json
+11,diameter,shape_conditioned,L3,train,Pick the cylinder with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0011.json
+12,area,same_shape,L1,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0012.json
+13,volume,cross_shape,L2,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0013.json
+14,length,shape_conditioned,L3,train,Pick the rectangular bar with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0014.json
+15,width,same_shape,L1,eval,Pick the rectangular plate with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0015.json
+16,height,cross_shape,L2,eval,Pick the object with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0016.json
+17,radius,shape_conditioned,L3,eval,Pick the cylinder with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0017.json
+18,diameter,same_shape,L1,train,Pick the cylinder with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0018.json
+19,area,cross_shape,L2,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0019.json
+20,volume,shape_conditioned,L3,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0020.json
+21,length,cross_shape,L1,train,Pick the object with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0021.json
+22,width,same_shape,L2,train,Pick the rectangular plate with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0022.json
+23,height,same_shape,L3,train,Pick the box with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0023.json
+24,radius,shape_conditioned,L1,train,Pick the cylinder with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0024.json
+25,diameter,shape_conditioned,L2,train,Pick the cylinder with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0025.json
+26,area,cross_shape,L3,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0026.json
+27,volume,cross_shape,L1,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0027.json
+28,length,same_shape,L2,train,Pick the rectangular bar with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0028.json
+29,width,same_shape,L3,train,Pick the rectangular plate with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0029.json
+30,height,shape_conditioned,L1,eval,Pick the box with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0030.json
+31,radius,shape_conditioned,L2,eval,Pick the cylinder with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0031.json
+32,diameter,cross_shape,L3,eval,Pick the object with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0032.json
+33,area,cross_shape,L1,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0033.json
+34,volume,same_shape,L2,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0034.json
+35,length,same_shape,L3,train,Pick the rectangular bar with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0035.json
+36,width,shape_conditioned,L1,train,Pick the rectangular plate with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0036.json
+37,height,shape_conditioned,L2,train,Pick the box with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0037.json
+38,radius,cross_shape,L3,train,Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0038.json
+39,diameter,cross_shape,L1,train,Pick the object with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0039.json
+40,area,same_shape,L2,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0040.json
+41,volume,same_shape,L3,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0041.json
+42,length,shape_conditioned,L1,train,Pick the rectangular bar with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0042.json
+43,width,shape_conditioned,L2,train,Pick the rectangular plate with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0043.json
+44,height,cross_shape,L3,train,Pick the object with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0044.json
+45,radius,cross_shape,L1,eval,Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0045.json
+46,diameter,same_shape,L2,eval,Pick the cylinder with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0046.json
+47,area,same_shape,L3,eval,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0047.json
+48,volume,shape_conditioned,L1,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0048.json
+49,length,shape_conditioned,L2,train,Pick the rectangular bar with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0049.json
+50,width,cross_shape,L3,train,Pick the object with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0050.json
+51,height,cross_shape,L1,train,Pick the object with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0051.json
+52,radius,same_shape,L2,train,Pick the cylinder with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0052.json
+53,diameter,same_shape,L3,train,Pick the cylinder with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0053.json
+54,area,shape_conditioned,L1,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0054.json
+55,volume,shape_conditioned,L2,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0055.json
+56,length,cross_shape,L3,train,Pick the object with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0056.json
+57,width,cross_shape,L1,train,Pick the object with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0057.json
+58,height,same_shape,L2,train,Pick the box with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0058.json
+59,radius,same_shape,L3,train,Pick the cylinder with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0059.json
+60,diameter,shape_conditioned,L1,eval,Pick the cylinder with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0060.json
+61,area,shape_conditioned,L2,eval,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0061.json
+62,volume,cross_shape,L3,eval,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0062.json
+63,length,same_shape,L1,train,Pick the rectangular bar with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0063.json
+64,width,cross_shape,L2,train,Pick the object with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0064.json
+65,height,shape_conditioned,L3,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0065.json
+66,radius,same_shape,L1,train,Pick the cylinder with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0066.json
+67,diameter,cross_shape,L2,train,Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0067.json
+68,area,shape_conditioned,L3,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0068.json
+69,volume,same_shape,L1,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0069.json
+70,length,cross_shape,L2,train,Pick the object with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0070.json
+71,width,shape_conditioned,L3,train,Pick the rectangular plate with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0071.json
+72,height,same_shape,L1,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0072.json
+73,radius,cross_shape,L2,train,Pick the object with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0073.json
+74,diameter,shape_conditioned,L3,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0074.json
+75,area,same_shape,L1,eval,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0075.json
+76,volume,cross_shape,L2,eval,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0076.json
+77,length,shape_conditioned,L3,eval,Pick the rectangular bar with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0077.json
+78,width,same_shape,L1,train,Pick the rectangular plate with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0078.json
+79,height,cross_shape,L2,train,Pick the object with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0079.json
+80,radius,shape_conditioned,L3,train,Pick the cylinder with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0080.json
+81,diameter,same_shape,L1,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0081.json
+82,area,cross_shape,L2,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0082.json
+83,volume,shape_conditioned,L3,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0083.json
+84,length,cross_shape,L1,train,Pick the object with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0084.json
+85,width,same_shape,L2,train,Pick the rectangular plate with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0085.json
+86,height,same_shape,L3,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0086.json
+87,radius,shape_conditioned,L1,train,Pick the cylinder with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0087.json
+88,diameter,shape_conditioned,L2,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0088.json
+89,area,cross_shape,L3,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0089.json
+90,volume,cross_shape,L1,eval,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0090.json
+91,length,same_shape,L2,eval,Pick the rectangular bar with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0091.json
+92,width,same_shape,L3,eval,Pick the rectangular plate with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0092.json
+93,height,shape_conditioned,L1,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0093.json
+94,radius,shape_conditioned,L2,train,Pick the cylinder with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0094.json
+95,diameter,cross_shape,L3,train,Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0095.json
+96,area,cross_shape,L1,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0096.json
+97,volume,same_shape,L2,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0097.json
+98,length,same_shape,L3,train,Pick the rectangular bar with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0098.json
+99,width,shape_conditioned,L1,train,Pick the rectangular plate with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0099.json
+100,height,shape_conditioned,L2,train,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0100.json
+101,radius,cross_shape,L3,train,Pick the object with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0101.json
+102,diameter,cross_shape,L1,train,Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0102.json
+103,area,same_shape,L2,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0103.json
+104,volume,same_shape,L3,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0104.json
+105,length,shape_conditioned,L1,eval,Pick the rectangular bar with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0105.json
+106,width,shape_conditioned,L2,eval,Pick the rectangular plate with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0106.json
+107,height,cross_shape,L3,eval,Pick the object with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0107.json
+108,radius,cross_shape,L1,train,Pick the object with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0108.json
+109,diameter,same_shape,L2,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0109.json
+110,area,same_shape,L3,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0110.json
+111,volume,shape_conditioned,L1,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0111.json
+112,length,shape_conditioned,L2,train,Pick the rectangular bar with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0112.json
+113,width,cross_shape,L3,train,Pick the object with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0113.json
+114,height,cross_shape,L1,train,Pick the object with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0114.json
+115,radius,same_shape,L2,train,Pick the cylinder with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0115.json
+116,diameter,same_shape,L3,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0116.json
+117,area,shape_conditioned,L1,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0117.json
+118,volume,shape_conditioned,L2,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0118.json
+119,length,cross_shape,L3,train,Pick the object with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0119.json
+120,width,cross_shape,L1,eval,Pick the object with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0120.json
+121,height,same_shape,L2,eval,Pick the box with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0121.json
+122,radius,same_shape,L3,eval,Pick the cylinder with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0122.json
+123,diameter,shape_conditioned,L1,train,Pick the cylinder with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0123.json
+124,area,shape_conditioned,L2,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0124.json
+125,volume,cross_shape,L3,train,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0125.json
+126,length,same_shape,L1,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0126.json
+127,width,cross_shape,L2,train,Pick the object with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0127.json
+128,height,shape_conditioned,L3,train,Pick the box with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0128.json
+129,radius,same_shape,L1,train,Pick the cylinder with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0129.json
+130,diameter,cross_shape,L2,train,Pick the object with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0130.json
+131,area,shape_conditioned,L3,train,Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0131.json
+132,volume,same_shape,L1,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0132.json
+133,length,cross_shape,L2,train,Pick the object with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0133.json
+134,width,shape_conditioned,L3,train,Pick the rectangular plate with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0134.json
+135,height,same_shape,L1,eval,Pick the box with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0135.json
+136,radius,cross_shape,L2,eval,Pick the object with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0136.json
+137,diameter,shape_conditioned,L3,eval,Pick the cylinder with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0137.json
+138,area,same_shape,L1,train,Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0138.json
+139,volume,cross_shape,L2,train,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0139.json
+140,length,shape_conditioned,L3,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0140.json
+141,width,same_shape,L1,train,Pick the rectangular plate with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0141.json
+142,height,cross_shape,L2,train,Pick the object with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0142.json
+143,radius,shape_conditioned,L3,train,Pick the cylinder with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0143.json
+144,diameter,same_shape,L1,train,Pick the cylinder with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0144.json
+145,area,cross_shape,L2,train,Pick the object with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0145.json
+146,volume,shape_conditioned,L3,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0146.json
+147,length,cross_shape,L1,train,Pick the object with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0147.json
+148,width,same_shape,L2,train,Pick the rectangular plate with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0148.json
+149,height,same_shape,L3,train,Pick the box with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0149.json
+150,radius,shape_conditioned,L1,eval,Pick the cylinder with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0150.json
+151,diameter,shape_conditioned,L2,eval,Pick the cylinder with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0151.json
+152,area,cross_shape,L3,eval,Pick the object with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0152.json
+153,volume,cross_shape,L1,train,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0153.json
+154,length,same_shape,L2,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0154.json
+155,width,same_shape,L3,train,Pick the rectangular plate with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0155.json
+156,height,shape_conditioned,L1,train,Pick the box with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0156.json
+157,radius,shape_conditioned,L2,train,Pick the cylinder with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0157.json
+158,diameter,cross_shape,L3,train,Pick the object with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0158.json
+159,area,cross_shape,L1,train,Pick the object with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0159.json
+160,volume,same_shape,L2,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0160.json
+161,length,same_shape,L3,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0161.json
+162,width,shape_conditioned,L1,train,Pick the rectangular plate with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0162.json
+163,height,shape_conditioned,L2,train,Pick the box with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0163.json
+164,radius,cross_shape,L3,train,Pick the object with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0164.json
+165,diameter,cross_shape,L1,eval,Pick the object with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0165.json
+166,area,same_shape,L2,eval,Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0166.json
+167,volume,same_shape,L3,eval,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0167.json
+168,length,shape_conditioned,L1,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0168.json
+169,width,shape_conditioned,L2,train,Pick the rectangular plate with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0169.json
+170,height,cross_shape,L3,train,Pick the object with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0170.json
+171,radius,cross_shape,L1,train,Pick the object with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0171.json
+172,diameter,same_shape,L2,train,Pick the cylinder with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0172.json
+173,area,same_shape,L3,train,Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0173.json
+174,volume,shape_conditioned,L1,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0174.json
+175,length,shape_conditioned,L2,train,Pick the rectangular bar with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0175.json
+176,width,cross_shape,L3,train,Pick the object with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0176.json
+177,height,cross_shape,L1,train,Pick the object with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0177.json
+178,radius,same_shape,L2,train,Pick the cylinder with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0178.json
+179,diameter,same_shape,L3,train,Pick the cylinder with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0179.json
+180,area,shape_conditioned,L1,eval,Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0180.json
+181,volume,shape_conditioned,L2,eval,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0181.json
+182,length,cross_shape,L3,eval,Pick the object with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0182.json
+183,width,cross_shape,L1,train,Pick the object with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0183.json
+184,height,same_shape,L2,train,Pick the box with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0184.json
+185,radius,same_shape,L3,train,Pick the cylinder with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0185.json
+186,diameter,shape_conditioned,L1,train,Pick the cylinder with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0186.json
+187,area,shape_conditioned,L2,train,Pick the circular disk with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0187.json
+188,volume,cross_shape,L3,train,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0188.json
+189,length,same_shape,L1,train,Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0189.json
+190,width,cross_shape,L2,train,Pick the object with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0190.json
+191,height,shape_conditioned,L3,train,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0191.json
+192,radius,same_shape,L1,train,Pick the cylinder with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0192.json
+193,diameter,cross_shape,L2,train,Pick the object with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0193.json
+194,area,shape_conditioned,L3,train,Pick the circular disk with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0194.json
+195,volume,same_shape,L1,eval,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0195.json
+196,length,cross_shape,L2,eval,Pick the object with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0196.json
+197,width,shape_conditioned,L3,eval,Pick the rectangular plate with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0197.json
+198,height,same_shape,L1,train,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0198.json
+199,radius,cross_shape,L2,train,Pick the object with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0199.json
+200,diameter,shape_conditioned,L3,train,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0200.json
+201,area,same_shape,L1,train,Pick the circular disk with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0201.json
+202,volume,cross_shape,L2,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0202.json
+203,length,shape_conditioned,L3,train,Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0203.json
+204,width,same_shape,L1,train,Pick the rectangular plate with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0204.json
+205,height,cross_shape,L2,train,Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0205.json
+206,radius,shape_conditioned,L3,train,Pick the cylinder with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0206.json
+207,diameter,same_shape,L1,train,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0207.json
+208,area,cross_shape,L2,train,Pick the object with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0208.json
+209,volume,shape_conditioned,L3,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0209.json
+210,length,cross_shape,L1,eval,Pick the object with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0210.json
+211,width,same_shape,L2,eval,Pick the rectangular plate with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0211.json
+212,height,same_shape,L3,eval,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0212.json
+213,radius,shape_conditioned,L1,train,Pick the cylinder with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0213.json
+214,diameter,shape_conditioned,L2,train,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0214.json
+215,area,cross_shape,L3,train,Pick the object with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0215.json
+216,volume,cross_shape,L1,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0216.json
+217,length,same_shape,L2,train,Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0217.json
+218,width,same_shape,L3,train,Pick the rectangular plate with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0218.json
+219,height,shape_conditioned,L1,train,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0219.json
+220,radius,shape_conditioned,L2,train,Pick the cylinder with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0220.json
+221,diameter,cross_shape,L3,train,Pick the object with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0221.json
+222,area,cross_shape,L1,train,Pick the object with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0222.json
+223,volume,same_shape,L2,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0223.json
+224,length,same_shape,L3,train,Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0224.json
+225,width,shape_conditioned,L1,eval,Pick the rectangular plate with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0225.json
+226,height,shape_conditioned,L2,eval,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0226.json
+227,radius,cross_shape,L3,eval,Pick the object with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0227.json
+228,diameter,cross_shape,L1,train,Pick the object with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0228.json
+229,area,same_shape,L2,train,Pick the circular disk with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0229.json
+230,volume,same_shape,L3,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0230.json
+231,length,shape_conditioned,L1,train,Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0231.json
+232,width,shape_conditioned,L2,train,Pick the rectangular plate with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0232.json
+233,height,cross_shape,L3,train,Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0233.json
+234,radius,cross_shape,L1,train,Pick the object with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0234.json
+235,diameter,same_shape,L2,train,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0235.json
+236,area,same_shape,L3,train,Pick the circular disk with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0236.json
+237,volume,shape_conditioned,L1,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0237.json
+238,length,shape_conditioned,L2,train,Pick the rectangular bar with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0238.json
+239,width,cross_shape,L3,train,Pick the object with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0239.json
+240,height,cross_shape,L1,eval,Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0240.json
+241,radius,same_shape,L2,eval,Pick the cylinder with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0241.json
+242,diameter,same_shape,L3,eval,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0242.json
+243,area,shape_conditioned,L1,train,Pick the circular disk with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0243.json
+244,volume,shape_conditioned,L2,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0244.json
+245,length,cross_shape,L3,train,Pick the object with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0245.json
+246,width,cross_shape,L1,train,Pick the object with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0246.json
+247,height,same_shape,L2,train,Pick the box with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0247.json
+248,radius,same_shape,L3,train,Pick the cylinder with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0248.json
+249,diameter,shape_conditioned,L1,train,Pick the cylinder with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0249.json
+250,area,shape_conditioned,L2,train,Pick the circular disk with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0250.json
+251,volume,cross_shape,L3,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0251.json
+252,length,same_shape,L1,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0252.json
+253,width,cross_shape,L2,train,Pick the object with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0253.json
+254,height,shape_conditioned,L3,train,Pick the box with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0254.json
+255,radius,same_shape,L1,eval,Pick the cylinder with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0255.json
+256,diameter,cross_shape,L2,eval,Pick the object with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0256.json
+257,area,shape_conditioned,L3,eval,Pick the circular disk with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0257.json
+258,volume,same_shape,L1,train,Pick the sphere with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0258.json
+259,length,cross_shape,L2,train,Pick the object with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0259.json
+260,width,shape_conditioned,L3,train,Pick the rectangular plate with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0260.json
+261,height,same_shape,L1,train,Pick the box with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0261.json
+262,radius,cross_shape,L2,train,Pick the object with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0262.json
+263,diameter,shape_conditioned,L3,train,Pick the cylinder with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0263.json
+264,area,same_shape,L1,train,Pick the circular disk with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0264.json
+265,volume,cross_shape,L2,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0265.json
+266,length,shape_conditioned,L3,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0266.json
+267,width,same_shape,L1,train,Pick the rectangular plate with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0267.json
+268,height,cross_shape,L2,train,Pick the object with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0268.json
+269,radius,shape_conditioned,L3,train,Pick the cylinder with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0269.json
+270,diameter,same_shape,L1,eval,Pick the cylinder with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0270.json
+271,area,cross_shape,L2,eval,Pick the object with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0271.json
+272,volume,shape_conditioned,L3,eval,Pick the sphere with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0272.json
+273,length,cross_shape,L1,train,Pick the object with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0273.json
+274,width,same_shape,L2,train,Pick the rectangular plate with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0274.json
+275,height,same_shape,L3,train,Pick the box with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0275.json
+276,radius,shape_conditioned,L1,train,Pick the cylinder with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0276.json
+277,diameter,shape_conditioned,L2,train,Pick the cylinder with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0277.json
+278,area,cross_shape,L3,train,Pick the object with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0278.json
+279,volume,cross_shape,L1,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0279.json
+280,length,same_shape,L2,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0280.json
+281,width,same_shape,L3,train,Pick the rectangular plate with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0281.json
+282,height,shape_conditioned,L1,train,Pick the box with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0282.json
+283,radius,shape_conditioned,L2,train,Pick the cylinder with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0283.json
+284,diameter,cross_shape,L3,train,Pick the object with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0284.json
+285,area,cross_shape,L1,eval,Pick the object with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0285.json
+286,volume,same_shape,L2,eval,Pick the sphere with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0286.json
+287,length,same_shape,L3,eval,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0287.json
+288,width,shape_conditioned,L1,train,Pick the rectangular plate with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0288.json
+289,height,shape_conditioned,L2,train,Pick the box with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0289.json
+290,radius,cross_shape,L3,train,Pick the object with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0290.json
+291,diameter,cross_shape,L1,train,Pick the object with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0291.json
+292,area,same_shape,L2,train,Pick the circular disk with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0292.json
+293,volume,same_shape,L3,train,Pick the sphere with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0293.json
+294,length,shape_conditioned,L1,train,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0294.json
+295,width,shape_conditioned,L2,train,Pick the rectangular plate with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0295.json
+296,height,cross_shape,L3,train,Pick the object with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0296.json
+297,radius,cross_shape,L1,train,Pick the object with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0297.json
+298,diameter,same_shape,L2,train,Pick the cylinder with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0298.json
+299,area,same_shape,L3,train,Pick the circular disk with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0299.json
+300,volume,shape_conditioned,L1,eval,Pick the sphere with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0300.json
+301,length,shape_conditioned,L2,eval,Pick the rectangular bar with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0301.json
+302,width,cross_shape,L3,eval,Pick the object with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0302.json
+303,height,cross_shape,L1,train,Pick the object with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0303.json
+304,radius,same_shape,L2,train,Pick the cylinder with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0304.json
+305,diameter,same_shape,L3,train,Pick the cylinder with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0305.json
+306,area,shape_conditioned,L1,train,Pick the circular disk with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0306.json
+307,volume,shape_conditioned,L2,train,Pick the sphere with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0307.json
+308,length,cross_shape,L3,train,Pick the object with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0308.json
+309,width,cross_shape,L1,train,Pick the object with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0309.json
+310,height,same_shape,L2,train,Pick the box with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0310.json
+311,radius,same_shape,L3,train,Pick the cylinder with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0311.json
+312,diameter,shape_conditioned,L1,train,Pick the cylinder with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0312.json
+313,area,shape_conditioned,L2,train,Pick the circular disk with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0313.json
+314,volume,cross_shape,L3,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0314.json
+315,length,same_shape,L1,eval,Pick the rectangular bar with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0315.json
+316,width,cross_shape,L2,eval,Pick the object with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0316.json
+317,height,shape_conditioned,L3,eval,Pick the box with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0317.json
+318,radius,same_shape,L1,train,Pick the cylinder with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0318.json
+319,diameter,cross_shape,L2,train,Pick the object with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0319.json
+320,area,shape_conditioned,L3,train,Pick the rectangular plate with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0320.json
+321,volume,same_shape,L1,train,Pick the sphere with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0321.json
+322,length,cross_shape,L2,train,Pick the object with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0322.json
+323,width,shape_conditioned,L3,train,Pick the rectangular plate with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0323.json
+324,height,same_shape,L1,train,Pick the box with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0324.json
+325,radius,cross_shape,L2,train,Pick the object with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0325.json
+326,diameter,shape_conditioned,L3,train,Pick the cylinder with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0326.json
+327,area,same_shape,L1,train,Pick the rectangular plate with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0327.json
+328,volume,cross_shape,L2,train,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0328.json
+329,length,shape_conditioned,L3,train,Pick the rectangular bar with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0329.json
+330,width,same_shape,L1,eval,Pick the rectangular plate with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0330.json
+331,height,cross_shape,L2,eval,Pick the object with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0331.json
+332,radius,shape_conditioned,L3,eval,Pick the cylinder with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0332.json
+333,diameter,same_shape,L1,train,Pick the cylinder with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0333.json
+334,area,cross_shape,L2,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0334.json
+335,volume,shape_conditioned,L3,train,Pick the sphere with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0335.json
+336,length,cross_shape,L1,train,Pick the object with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0336.json
+337,width,same_shape,L2,train,Pick the rectangular plate with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0337.json
+338,height,same_shape,L3,train,Pick the box with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0338.json
+339,radius,shape_conditioned,L1,train,Pick the cylinder with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0339.json
+340,diameter,shape_conditioned,L2,train,Pick the cylinder with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0340.json
+341,area,cross_shape,L3,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0341.json
+342,volume,cross_shape,L1,train,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0342.json
+343,length,same_shape,L2,train,Pick the rectangular bar with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0343.json
+344,width,same_shape,L3,train,Pick the rectangular plate with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0344.json
+345,height,shape_conditioned,L1,eval,Pick the box with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0345.json
+346,radius,shape_conditioned,L2,eval,Pick the cylinder with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0346.json
+347,diameter,cross_shape,L3,eval,Pick the object with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0347.json
+348,area,cross_shape,L1,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0348.json
+349,volume,same_shape,L2,train,Pick the sphere with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0349.json
+350,length,same_shape,L3,train,Pick the rectangular bar with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0350.json
+351,width,shape_conditioned,L1,train,Pick the rectangular plate with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0351.json
+352,height,shape_conditioned,L2,train,Pick the box with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0352.json
+353,radius,cross_shape,L3,train,Pick the object with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0353.json
+354,diameter,cross_shape,L1,train,Pick the object with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0354.json
+355,area,same_shape,L2,train,Pick the rectangular plate with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0355.json
+356,volume,same_shape,L3,train,Pick the sphere with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0356.json
+357,length,shape_conditioned,L1,train,Pick the rectangular bar with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0357.json
+358,width,shape_conditioned,L2,train,Pick the rectangular plate with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0358.json
+359,height,cross_shape,L3,train,Pick the object with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0359.json
+360,radius,cross_shape,L1,eval,Pick the object with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0360.json
+361,diameter,same_shape,L2,eval,Pick the cylinder with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0361.json
+362,area,same_shape,L3,eval,Pick the rectangular plate with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0362.json
+363,volume,shape_conditioned,L1,train,Pick the sphere with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0363.json
+364,length,shape_conditioned,L2,train,Pick the rectangular bar with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0364.json
+365,width,cross_shape,L3,train,Pick the object with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0365.json
+366,height,cross_shape,L1,train,Pick the object with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0366.json
+367,radius,same_shape,L2,train,Pick the cylinder with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0367.json
+368,diameter,same_shape,L3,train,Pick the cylinder with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0368.json
+369,area,shape_conditioned,L1,train,Pick the rectangular plate with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0369.json
+370,volume,shape_conditioned,L2,train,Pick the sphere with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0370.json
+371,length,cross_shape,L3,train,Pick the object with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0371.json
+372,width,cross_shape,L1,train,Pick the object with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0372.json
+373,height,same_shape,L2,train,Pick the box with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0373.json
+374,radius,same_shape,L3,train,Pick the cylinder with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0374.json
+375,diameter,shape_conditioned,L1,eval,Pick the cylinder with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0375.json
+376,area,shape_conditioned,L2,eval,Pick the rectangular plate with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0376.json
+377,volume,cross_shape,L3,eval,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0377.json
+378,length,same_shape,L1,train,Pick the box with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0378.json
+379,width,cross_shape,L2,train,Pick the object with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0379.json
+380,height,shape_conditioned,L3,train,Pick the cylinder with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0380.json
+381,radius,same_shape,L1,train,Pick the puck with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0381.json
+382,diameter,cross_shape,L2,train,Pick the object with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0382.json
+383,area,shape_conditioned,L3,train,Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0383.json
+384,volume,same_shape,L1,train,Pick the sphere with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0384.json
+385,length,cross_shape,L2,train,Pick the object with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0385.json
+386,width,shape_conditioned,L3,train,Pick the box with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0386.json
+387,height,same_shape,L1,train,Pick the cylinder with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0387.json
+388,radius,cross_shape,L2,train,Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0388.json
+389,diameter,shape_conditioned,L3,train,Pick the circular disk with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0389.json
+390,area,same_shape,L1,eval,Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0390.json
+391,volume,cross_shape,L2,eval,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0391.json
+392,length,shape_conditioned,L3,eval,Pick the box with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0392.json
+393,width,same_shape,L1,train,Pick the box with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0393.json
+394,height,cross_shape,L2,train,Pick the object with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0394.json
+395,radius,shape_conditioned,L3,train,Pick the puck with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0395.json
+396,diameter,same_shape,L1,train,Pick the circular disk with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0396.json
+397,area,cross_shape,L2,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0397.json
+398,volume,shape_conditioned,L3,train,Pick the sphere with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0398.json
+399,length,cross_shape,L1,train,Pick the object with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0399.json
+400,width,same_shape,L2,train,Pick the box with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0400.json
+401,height,same_shape,L3,train,Pick the cylinder with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0401.json
+402,radius,shape_conditioned,L1,train,Pick the puck with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0402.json
+403,diameter,shape_conditioned,L2,train,Pick the circular disk with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0403.json
+404,area,cross_shape,L3,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0404.json
+405,volume,cross_shape,L1,eval,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0405.json
+406,length,same_shape,L2,eval,Pick the box with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0406.json
+407,width,same_shape,L3,eval,Pick the box with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0407.json
+408,height,shape_conditioned,L1,train,Pick the cylinder with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0408.json
+409,radius,shape_conditioned,L2,train,Pick the puck with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0409.json
+410,diameter,cross_shape,L3,train,Pick the object with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0410.json
+411,area,cross_shape,L1,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0411.json
+412,volume,same_shape,L2,train,Pick the sphere with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0412.json
+413,length,same_shape,L3,train,Pick the box with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0413.json
+414,width,shape_conditioned,L1,train,Pick the box with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0414.json
+415,height,shape_conditioned,L2,train,Pick the cylinder with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0415.json
+416,radius,cross_shape,L3,train,Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0416.json
+417,diameter,cross_shape,L1,train,Pick the object with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0417.json
+418,area,same_shape,L2,train,Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0418.json
+419,volume,same_shape,L3,train,Pick the sphere with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0419.json
+420,length,shape_conditioned,L1,eval,Pick the box with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0420.json
+421,width,shape_conditioned,L2,eval,Pick the box with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0421.json
+422,height,cross_shape,L3,eval,Pick the object with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0422.json
+423,radius,cross_shape,L1,train,Pick the object with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0423.json
+424,diameter,same_shape,L2,train,Pick the circular disk with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0424.json
+425,area,same_shape,L3,train,Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0425.json
+426,volume,shape_conditioned,L1,train,Pick the sphere with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0426.json
+427,length,shape_conditioned,L2,train,Pick the box with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0427.json
+428,width,cross_shape,L3,train,Pick the object with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0428.json
+429,height,cross_shape,L1,train,Pick the object with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0429.json
+430,radius,same_shape,L2,train,Pick the puck with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0430.json
+431,diameter,same_shape,L3,train,Pick the circular disk with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0431.json
+432,area,shape_conditioned,L1,train,Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0432.json
+433,volume,shape_conditioned,L2,train,Pick the sphere with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0433.json
+434,length,cross_shape,L3,train,Pick the object with local length 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0434.json
+435,width,cross_shape,L1,eval,Pick the object with local width 35 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0435.json
+436,height,same_shape,L2,eval,Pick the cylinder with local height 6 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0436.json
+437,radius,same_shape,L3,eval,Pick the puck with local radius 21 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0437.json
+438,diameter,shape_conditioned,L1,train,Pick the circular disk with local diameter 42 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0438.json
+439,area,shape_conditioned,L2,train,Pick the rectangular plate with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0439.json
+440,volume,cross_shape,L3,train,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0440.json
+441,length,same_shape,L1,train,Pick the box with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0441.json
+442,width,cross_shape,L2,train,Pick the object with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0442.json
+443,height,shape_conditioned,L3,train,Pick the cylinder with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0443.json
+444,radius,same_shape,L1,train,Pick the puck with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0444.json
+445,diameter,cross_shape,L2,train,Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0445.json
+446,area,shape_conditioned,L3,train,Pick the rectangular plate with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0446.json
+447,volume,same_shape,L1,train,Pick the sphere with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0447.json
+448,length,cross_shape,L2,train,Pick the object with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0448.json
+449,width,shape_conditioned,L3,train,Pick the box with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0449.json
+450,height,same_shape,L1,eval,Pick the cylinder with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0450.json
+451,radius,cross_shape,L2,eval,Pick the object with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0451.json
+452,diameter,shape_conditioned,L3,eval,Pick the circular disk with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0452.json
+453,area,same_shape,L1,train,Pick the rectangular plate with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0453.json
+454,volume,cross_shape,L2,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0454.json
+455,length,shape_conditioned,L3,train,Pick the box with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0455.json
+456,width,same_shape,L1,train,Pick the box with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0456.json
+457,height,cross_shape,L2,train,Pick the object with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0457.json
+458,radius,shape_conditioned,L3,train,Pick the puck with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0458.json
+459,diameter,same_shape,L1,train,Pick the circular disk with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0459.json
+460,area,cross_shape,L2,train,Pick the object with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0460.json
+461,volume,shape_conditioned,L3,train,Pick the sphere with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0461.json
+462,length,cross_shape,L1,train,Pick the object with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0462.json
+463,width,same_shape,L2,train,Pick the box with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0463.json
+464,height,same_shape,L3,train,Pick the cylinder with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0464.json
+465,radius,shape_conditioned,L1,eval,Pick the puck with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0465.json
+466,diameter,shape_conditioned,L2,eval,Pick the circular disk with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0466.json
+467,area,cross_shape,L3,eval,Pick the object with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0467.json
+468,volume,cross_shape,L1,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0468.json
+469,length,same_shape,L2,train,Pick the box with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0469.json
+470,width,same_shape,L3,train,Pick the box with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0470.json
+471,height,shape_conditioned,L1,train,Pick the cylinder with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0471.json
+472,radius,shape_conditioned,L2,train,Pick the puck with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0472.json
+473,diameter,cross_shape,L3,train,Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0473.json
+474,area,cross_shape,L1,train,Pick the object with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0474.json
+475,volume,same_shape,L2,train,Pick the sphere with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0475.json
+476,length,same_shape,L3,train,Pick the box with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0476.json
+477,width,shape_conditioned,L1,train,Pick the box with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0477.json
+478,height,shape_conditioned,L2,train,Pick the cylinder with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0478.json
+479,radius,cross_shape,L3,train,Pick the object with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0479.json
+480,diameter,cross_shape,L1,eval,Pick the object with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0480.json
+481,area,same_shape,L2,eval,Pick the rectangular plate with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0481.json
+482,volume,same_shape,L3,eval,Pick the sphere with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0482.json
+483,length,shape_conditioned,L1,train,Pick the box with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0483.json
+484,width,shape_conditioned,L2,train,Pick the box with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0484.json
+485,height,cross_shape,L3,train,Pick the object with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0485.json
+486,radius,cross_shape,L1,train,Pick the object with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0486.json
+487,diameter,same_shape,L2,train,Pick the circular disk with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0487.json
+488,area,same_shape,L3,train,Pick the rectangular plate with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0488.json
+489,volume,shape_conditioned,L1,train,Pick the sphere with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0489.json
+490,length,shape_conditioned,L2,train,Pick the box with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0490.json
+491,width,cross_shape,L3,train,Pick the object with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0491.json
+492,height,cross_shape,L1,train,Pick the object with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0492.json
+493,radius,same_shape,L2,train,Pick the puck with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0493.json
+494,diameter,same_shape,L3,train,Pick the circular disk with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0494.json
+495,area,shape_conditioned,L1,eval,Pick the rectangular plate with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0495.json
+496,volume,shape_conditioned,L2,eval,Pick the sphere with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0496.json
+497,length,cross_shape,L3,eval,Pick the object with local length 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0497.json
+498,width,cross_shape,L1,train,Pick the object with local width 40 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0498.json
+499,height,same_shape,L2,train,Pick the cylinder with local height 8 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0499.json
+500,radius,same_shape,L3,train,Pick the puck with local radius 22 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0500.json
+501,diameter,shape_conditioned,L1,train,Pick the circular disk with local diameter 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0501.json
+502,area,shape_conditioned,L2,train,Pick the rectangular plate with local base/footprint area 20 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0502.json
+503,volume,cross_shape,L3,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0503.json
+504,length,same_shape,L1,train,Pick the box with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0504.json
+505,width,cross_shape,L2,train,Pick the object with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0505.json
+506,height,shape_conditioned,L3,train,Pick the cylinder with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0506.json
+507,radius,same_shape,L1,train,Pick the puck with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0507.json
+508,diameter,cross_shape,L2,train,Pick the object with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0508.json
+509,area,shape_conditioned,L3,train,Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0509.json
+510,volume,same_shape,L1,eval,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0510.json
+511,length,cross_shape,L2,eval,Pick the object with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0511.json
+512,width,shape_conditioned,L3,eval,Pick the box with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0512.json
+513,height,same_shape,L1,train,Pick the cylinder with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0513.json
+514,radius,cross_shape,L2,train,Pick the object with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0514.json
+515,diameter,shape_conditioned,L3,train,Pick the circular disk with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0515.json
+516,area,same_shape,L1,train,Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0516.json
+517,volume,cross_shape,L2,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0517.json
+518,length,shape_conditioned,L3,train,Pick the box with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0518.json
+519,width,same_shape,L1,train,Pick the box with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0519.json
+520,height,cross_shape,L2,train,Pick the object with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0520.json
+521,radius,shape_conditioned,L3,train,Pick the puck with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0521.json
+522,diameter,same_shape,L1,train,Pick the circular disk with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0522.json
+523,area,cross_shape,L2,train,Pick the object with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0523.json
+524,volume,shape_conditioned,L3,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0524.json
+525,length,cross_shape,L1,eval,Pick the object with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0525.json
+526,width,same_shape,L2,eval,Pick the box with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0526.json
+527,height,same_shape,L3,eval,Pick the cylinder with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0527.json
+528,radius,shape_conditioned,L1,train,Pick the puck with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0528.json
+529,diameter,shape_conditioned,L2,train,Pick the circular disk with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0529.json
+530,area,cross_shape,L3,train,Pick the object with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0530.json
+531,volume,cross_shape,L1,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0531.json
+532,length,same_shape,L2,train,Pick the box with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0532.json
+533,width,same_shape,L3,train,Pick the box with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0533.json
+534,height,shape_conditioned,L1,train,Pick the cylinder with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0534.json
+535,radius,shape_conditioned,L2,train,Pick the puck with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0535.json
+536,diameter,cross_shape,L3,train,Pick the object with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0536.json
+537,area,cross_shape,L1,train,Pick the object with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0537.json
+538,volume,same_shape,L2,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0538.json
+539,length,same_shape,L3,train,Pick the box with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0539.json
+540,width,shape_conditioned,L1,eval,Pick the box with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0540.json
+541,height,shape_conditioned,L2,eval,Pick the cylinder with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0541.json
+542,radius,cross_shape,L3,eval,Pick the object with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0542.json
+543,diameter,cross_shape,L1,train,Pick the object with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0543.json
+544,area,same_shape,L2,train,Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0544.json
+545,volume,same_shape,L3,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0545.json
+546,length,shape_conditioned,L1,train,Pick the box with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0546.json
+547,width,shape_conditioned,L2,train,Pick the box with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0547.json
+548,height,cross_shape,L3,train,Pick the object with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0548.json
+549,radius,cross_shape,L1,train,Pick the object with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0549.json
+550,diameter,same_shape,L2,train,Pick the circular disk with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0550.json
+551,area,same_shape,L3,train,Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0551.json
+552,volume,shape_conditioned,L1,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0552.json
+553,length,shape_conditioned,L2,train,Pick the box with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0553.json
+554,width,cross_shape,L3,train,Pick the object with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0554.json
+555,height,cross_shape,L1,eval,Pick the object with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0555.json
+556,radius,same_shape,L2,eval,Pick the puck with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0556.json
+557,diameter,same_shape,L3,eval,Pick the circular disk with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0557.json
+558,area,shape_conditioned,L1,train,Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0558.json
+559,volume,shape_conditioned,L2,train,Pick the box with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0559.json
+560,length,cross_shape,L3,train,Pick the object with local length 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0560.json
+561,width,cross_shape,L1,train,Pick the object with local width 45 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0561.json
+562,height,same_shape,L2,train,Pick the cylinder with local height 10 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0562.json
+563,radius,same_shape,L3,train,Pick the puck with local radius 23 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0563.json
+564,diameter,shape_conditioned,L1,train,Pick the circular disk with local diameter 48 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0564.json
+565,area,shape_conditioned,L2,train,Pick the rectangular plate with local base/footprint area 25 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0565.json
+566,volume,cross_shape,L3,train,Pick the object with solid volume 100 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0566.json
+567,length,same_shape,L1,train,Pick the box with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0567.json
+568,width,cross_shape,L2,train,Pick the object with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0568.json
+569,height,shape_conditioned,L3,train,Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0569.json
+570,radius,same_shape,L1,eval,Pick the puck with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0570.json
+571,diameter,cross_shape,L2,eval,Pick the object with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0571.json
+572,area,shape_conditioned,L3,eval,Pick the rectangular plate with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0572.json
+573,volume,same_shape,L1,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0573.json
+574,length,cross_shape,L2,train,Pick the object with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0574.json
+575,width,shape_conditioned,L3,train,Pick the box with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0575.json
+576,height,same_shape,L1,train,Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0576.json
+577,radius,cross_shape,L2,train,Pick the object with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0577.json
+578,diameter,shape_conditioned,L3,train,Pick the circular disk with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0578.json
+579,area,same_shape,L1,train,Pick the rectangular plate with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0579.json
+580,volume,cross_shape,L2,train,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0580.json
+581,length,shape_conditioned,L3,train,Pick the box with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0581.json
+582,width,same_shape,L1,train,Pick the box with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0582.json
+583,height,cross_shape,L2,train,Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0583.json
+584,radius,shape_conditioned,L3,train,Pick the puck with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0584.json
+585,diameter,same_shape,L1,eval,Pick the circular disk with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0585.json
+586,area,cross_shape,L2,eval,Pick the object with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0586.json
+587,volume,shape_conditioned,L3,eval,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0587.json
+588,length,cross_shape,L1,train,Pick the object with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0588.json
+589,width,same_shape,L2,train,Pick the box with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0589.json
+590,height,same_shape,L3,train,Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0590.json
+591,radius,shape_conditioned,L1,train,Pick the puck with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0591.json
+592,diameter,shape_conditioned,L2,train,Pick the circular disk with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0592.json
+593,area,cross_shape,L3,train,Pick the object with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0593.json
+594,volume,cross_shape,L1,train,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0594.json
+595,length,same_shape,L2,train,Pick the box with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0595.json
+596,width,same_shape,L3,train,Pick the box with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0596.json
+597,height,shape_conditioned,L1,train,Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0597.json
+598,radius,shape_conditioned,L2,train,Pick the puck with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0598.json
+599,diameter,cross_shape,L3,train,Pick the object with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0599.json
+600,area,cross_shape,L1,eval,Pick the object with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0600.json
+601,volume,same_shape,L2,eval,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0601.json
+602,length,same_shape,L3,eval,Pick the box with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0602.json
+603,width,shape_conditioned,L1,train,Pick the box with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0603.json
+604,height,shape_conditioned,L2,train,Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0604.json
+605,radius,cross_shape,L3,train,Pick the object with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0605.json
+606,diameter,cross_shape,L1,train,Pick the object with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0606.json
+607,area,same_shape,L2,train,Pick the rectangular plate with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0607.json
+608,volume,same_shape,L3,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0608.json
+609,length,shape_conditioned,L1,train,Pick the box with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0609.json
+610,width,shape_conditioned,L2,train,Pick the box with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0610.json
+611,height,cross_shape,L3,train,Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0611.json
+612,radius,cross_shape,L1,train,Pick the object with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0612.json
+613,diameter,same_shape,L2,train,Pick the circular disk with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0613.json
+614,area,same_shape,L3,train,Pick the rectangular plate with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0614.json
+615,volume,shape_conditioned,L1,eval,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0615.json
+616,length,shape_conditioned,L2,eval,Pick the box with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0616.json
+617,width,cross_shape,L3,eval,Pick the object with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0617.json
+618,height,cross_shape,L1,train,Pick the object with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0618.json
+619,radius,same_shape,L2,train,Pick the puck with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0619.json
+620,diameter,same_shape,L3,train,Pick the circular disk with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0620.json
+621,area,shape_conditioned,L1,train,Pick the rectangular plate with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0621.json
+622,volume,shape_conditioned,L2,train,Pick the box with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0622.json
+623,length,cross_shape,L3,train,Pick the object with local length 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0623.json
+624,width,cross_shape,L1,train,Pick the object with local width 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0624.json
+625,height,same_shape,L2,train,Pick the cylinder with local height 12 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0625.json
+626,radius,same_shape,L3,train,Pick the puck with local radius 24 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0626.json
+627,diameter,shape_conditioned,L1,train,Pick the circular disk with local diameter 50 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0627.json
+628,area,shape_conditioned,L2,train,Pick the rectangular plate with local base/footprint area 30 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0628.json
+629,volume,cross_shape,L3,train,Pick the object with solid volume 110 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0629.json
+630,length,same_shape,L1,eval,Pick the box with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0630.json
+631,width,cross_shape,L2,eval,Pick the object with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0631.json
+632,height,shape_conditioned,L3,eval,Pick the cylinder with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0632.json
+633,radius,same_shape,L1,train,Pick the puck with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0633.json
+634,diameter,cross_shape,L2,train,Pick the object with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0634.json
+635,area,shape_conditioned,L3,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0635.json
+636,volume,same_shape,L1,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0636.json
+637,length,cross_shape,L2,train,Pick the object with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0637.json
+638,width,shape_conditioned,L3,train,Pick the box with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0638.json
+639,height,same_shape,L1,train,Pick the cylinder with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0639.json
+640,radius,cross_shape,L2,train,Pick the object with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0640.json
+641,diameter,shape_conditioned,L3,train,Pick the circular disk with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0641.json
+642,area,same_shape,L1,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0642.json
+643,volume,cross_shape,L2,train,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0643.json
+644,length,shape_conditioned,L3,train,Pick the box with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0644.json
+645,width,same_shape,L1,eval,Pick the box with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0645.json
+646,height,cross_shape,L2,eval,Pick the object with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0646.json
+647,radius,shape_conditioned,L3,eval,Pick the puck with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0647.json
+648,diameter,same_shape,L1,train,Pick the circular disk with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0648.json
+649,area,cross_shape,L2,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0649.json
+650,volume,shape_conditioned,L3,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0650.json
+651,length,cross_shape,L1,train,Pick the object with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0651.json
+652,width,same_shape,L2,train,Pick the box with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0652.json
+653,height,same_shape,L3,train,Pick the cylinder with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0653.json
+654,radius,shape_conditioned,L1,train,Pick the puck with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0654.json
+655,diameter,shape_conditioned,L2,train,Pick the circular disk with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0655.json
+656,area,cross_shape,L3,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0656.json
+657,volume,cross_shape,L1,train,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0657.json
+658,length,same_shape,L2,train,Pick the box with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0658.json
+659,width,same_shape,L3,train,Pick the box with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0659.json
+660,height,shape_conditioned,L1,eval,Pick the cylinder with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0660.json
+661,radius,shape_conditioned,L2,eval,Pick the puck with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0661.json
+662,diameter,cross_shape,L3,eval,Pick the object with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0662.json
+663,area,cross_shape,L1,train,Pick the object with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0663.json
+664,volume,same_shape,L2,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0664.json
+665,length,same_shape,L3,train,Pick the box with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0665.json
+666,width,shape_conditioned,L1,train,Pick the box with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0666.json
+667,height,shape_conditioned,L2,train,Pick the cylinder with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0667.json
+668,radius,cross_shape,L3,train,Pick the object with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0668.json
+669,diameter,cross_shape,L1,train,Pick the object with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0669.json
+670,area,same_shape,L2,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0670.json
+671,volume,same_shape,L3,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0671.json
+672,length,shape_conditioned,L1,train,Pick the box with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0672.json
+673,width,shape_conditioned,L2,train,Pick the box with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0673.json
+674,height,cross_shape,L3,train,Pick the object with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0674.json
+675,radius,cross_shape,L1,eval,Pick the object with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0675.json
+676,diameter,same_shape,L2,eval,Pick the circular disk with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0676.json
+677,area,same_shape,L3,eval,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0677.json
+678,volume,shape_conditioned,L1,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0678.json
+679,length,shape_conditioned,L2,train,Pick the box with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0679.json
+680,width,cross_shape,L3,train,Pick the object with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0680.json
+681,height,cross_shape,L1,train,Pick the object with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0681.json
+682,radius,same_shape,L2,train,Pick the puck with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0682.json
+683,diameter,same_shape,L3,train,Pick the circular disk with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0683.json
+684,area,shape_conditioned,L1,train,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0684.json
+685,volume,shape_conditioned,L2,train,Pick the box with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0685.json
+686,length,cross_shape,L3,train,Pick the object with local length 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0686.json
+687,width,cross_shape,L1,train,Pick the object with local width 55 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0687.json
+688,height,same_shape,L2,train,Pick the cylinder with local height 14 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0688.json
+689,radius,same_shape,L3,train,Pick the puck with local radius 25 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0689.json
+690,diameter,shape_conditioned,L1,eval,Pick the circular disk with local diameter 52 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0690.json
+691,area,shape_conditioned,L2,eval,Pick the circular disk with local base/footprint area 15 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0691.json
+692,volume,cross_shape,L3,eval,Pick the object with solid volume 120 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0692.json
+693,length,same_shape,L1,train,Pick the box with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0693.json
+694,width,cross_shape,L2,train,Pick the object with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0694.json
+695,height,shape_conditioned,L3,train,Pick the cylinder with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0695.json
+696,radius,same_shape,L1,train,Pick the puck with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0696.json
+697,diameter,cross_shape,L2,train,Pick the object with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0697.json
+698,area,shape_conditioned,L3,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0698.json
+699,volume,same_shape,L1,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0699.json
+700,length,cross_shape,L2,train,Pick the object with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0700.json
+701,width,shape_conditioned,L3,train,Pick the box with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0701.json
+702,height,same_shape,L1,train,Pick the cylinder with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0702.json
+703,radius,cross_shape,L2,train,Pick the object with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0703.json
+704,diameter,shape_conditioned,L3,train,Pick the circular disk with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0704.json
+705,area,same_shape,L1,eval,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0705.json
+706,volume,cross_shape,L2,eval,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0706.json
+707,length,shape_conditioned,L3,eval,Pick the box with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0707.json
+708,width,same_shape,L1,train,Pick the box with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0708.json
+709,height,cross_shape,L2,train,Pick the object with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0709.json
+710,radius,shape_conditioned,L3,train,Pick the puck with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0710.json
+711,diameter,same_shape,L1,train,Pick the circular disk with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0711.json
+712,area,cross_shape,L2,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0712.json
+713,volume,shape_conditioned,L3,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0713.json
+714,length,cross_shape,L1,train,Pick the object with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0714.json
+715,width,same_shape,L2,train,Pick the box with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0715.json
+716,height,same_shape,L3,train,Pick the cylinder with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0716.json
+717,radius,shape_conditioned,L1,train,Pick the puck with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0717.json
+718,diameter,shape_conditioned,L2,train,Pick the circular disk with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0718.json
+719,area,cross_shape,L3,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0719.json
+720,volume,cross_shape,L1,eval,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0720.json
+721,length,same_shape,L2,eval,Pick the box with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0721.json
+722,width,same_shape,L3,eval,Pick the box with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0722.json
+723,height,shape_conditioned,L1,train,Pick the cylinder with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0723.json
+724,radius,shape_conditioned,L2,train,Pick the puck with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0724.json
+725,diameter,cross_shape,L3,train,Pick the object with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0725.json
+726,area,cross_shape,L1,train,Pick the object with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0726.json
+727,volume,same_shape,L2,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0727.json
+728,length,same_shape,L3,train,Pick the box with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0728.json
+729,width,shape_conditioned,L1,train,Pick the box with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0729.json
+730,height,shape_conditioned,L2,train,Pick the cylinder with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0730.json
+731,radius,cross_shape,L3,train,Pick the object with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0731.json
+732,diameter,cross_shape,L1,train,Pick the object with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0732.json
+733,area,same_shape,L2,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0733.json
+734,volume,same_shape,L3,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0734.json
+735,length,shape_conditioned,L1,eval,Pick the box with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0735.json
+736,width,shape_conditioned,L2,eval,Pick the box with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0736.json
+737,height,cross_shape,L3,eval,Pick the object with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0737.json
+738,radius,cross_shape,L1,train,Pick the object with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0738.json
+739,diameter,same_shape,L2,train,Pick the circular disk with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0739.json
+740,area,same_shape,L3,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0740.json
+741,volume,shape_conditioned,L1,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0741.json
+742,length,shape_conditioned,L2,train,Pick the box with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0742.json
+743,width,cross_shape,L3,train,Pick the object with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0743.json
+744,height,cross_shape,L1,train,Pick the object with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0744.json
+745,radius,same_shape,L2,train,Pick the puck with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0745.json
+746,diameter,same_shape,L3,train,Pick the circular disk with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0746.json
+747,area,shape_conditioned,L1,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0747.json
+748,volume,shape_conditioned,L2,train,Pick the box with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0748.json
+749,length,cross_shape,L3,train,Pick the object with local length 18 cm. Lift and hold it; leave all other objects untouched.,scenarios/length/slot_0749.json
+750,width,cross_shape,L1,eval,Pick the object with local width 60 mm. Lift and hold it; leave all other objects untouched.,scenarios/width/slot_0750.json
+751,height,same_shape,L2,eval,Pick the cylinder with local height 16 cm. Lift and hold it; leave all other objects untouched.,scenarios/height/slot_0751.json
+752,radius,same_shape,L3,eval,Pick the puck with local radius 26 mm. Lift and hold it; leave all other objects untouched.,scenarios/radius/slot_0752.json
+753,diameter,shape_conditioned,L1,train,Pick the circular disk with local diameter 54 mm. Lift and hold it; leave all other objects untouched.,scenarios/diameter/slot_0753.json
+754,area,shape_conditioned,L2,train,Pick the circular disk with local base/footprint area 18 cm2. Lift and hold it; leave all other objects untouched.,scenarios/area/slot_0754.json
+755,volume,cross_shape,L3,train,Pick the object with solid volume 130 cm3. Lift and hold it; leave all other objects untouched.,scenarios/volume/slot_0755.json
